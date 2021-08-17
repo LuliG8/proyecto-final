@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olimpa Design - Contacto </title>
+        <link rel="icon" href="images/icon.png">
+        <meta name="description" content="Somos Olimpa Design, un emprendimiento dónde fabricamos muebles de diseño y decoración. Contactate con nosotros">
+        <meta name="keywords" content="Decoración, muebles, hogar, diseño de interior, madera">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <div class="banner banner__header banner__header--transparent banner__header--scroll">
+        <i class="em em-zap" aria-role="presentation" aria-label="HIGH VOLTAGE SIGN"></i>
+        <p>Envíos gratis dentro de CABA &nbsp &nbsp • &nbsp &nbsp Envíos a todo el país  &nbsp &nbsp • &nbsp &nbsp  Hasta 12 cuotas sin interés</p>
+        <i class="em em-zap" aria-role="presentation" aria-label="HIGH VOLTAGE SIGN"></i>
+    </div> 
+
+    <header> 
+        <nav class="nav">
+
+            <div class="menu--small">
+                <ul class="menu__list--sm">
+                    <li>
+                        <a href="#"><span class="iconify menu__hamburguer icon" data-icon="whh:menu" data-inline="false"></span></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+                    </li>
+                    <ul class="menu__icons--end">
+                        <li>
+                            <span class="iconify icon__search--ms icon" data-icon="feather:search" data-inline="false"></span>
+                        </li>
+                        <li>
+                            <a href="#"><span class="iconify icon__cart icon" data-icon="fluent:cart-16-regular" data-inline="false"></span></a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="menu--large">
+                <div class="content__logo">
+                    <div>
+                        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+                    </div>
+                    <div class="registro">
+                        <ul>
+                            <li>
+                                <a href="#" class="cuenta">Iniciar Sesión</a>
+                            </li>
+                            <li>
+                                <span>/</span>
+                            </li>
+                            <li>
+                                <a href="#" class="cuenta">Registrarse</a>
+                            </li>
+                            <li type="button" class="registro__button position-relative">
+                                <div class="compras"> 
+                                    <span> Mi compra</span>
+                                    <span class="iconify icon__cart" data-icon="fluent:cart-16-regular" data-inline="false"></span>
+                                </div>
+                                <span class="registro__badge rounded-pill badge__cart">
+                                    0
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu__pages">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                        <li><a href="diseno.html">ARMA TU DISEÑO</a></li>
+                        <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                        <li><a href="contacto.html" class="menu__pages--active">CONTACTO</a></li>
+                    </ul>
+                    <div>
+                        <form action="#" class="buscador">
+                            <label for="buscador" hidden>Ingresa tu busqueda</label>
+                            <input type="text" id="buscador" required placeholder="Buscá un producto...">
+                            <button type="submit" class="btn btn__forms">
+                                <span class="iconify icon__search" data-icon="feather:search" data-inline="false"></span>  
+                            </button>
+                        </form>
+                    </div>
+                </div> 
+            </div>  
+        </nav>
+    </header>  
+
+<main>
+    <!-- WHATSAPP ICON -->
+    <span class="iconify whatsapp" data-icon="logos:whatsapp" data-inline="false" id="whatsapp"></span>
+
+    <h2>Contactate con nosotros</h2>
+
+    <section class="contact">
+        <p class="contact__text">¿Tenés alguna duda? Dejanosla a continuación y nos pondremos en contacto a la brevedad. </p>
+
+        <!-- ACA EMPIEZA EL FORM -->
+        <form action="#" class="contact__form">
+            <label for="nombre" class="form__label">Nombre:</label>
+            <input type="text" class="form__input" placeholder="Ingresá tu nombre" id="nombre">
+
+            <label for="mail" class="form__label">Mail:</label> 
+            <input type="email" class="form__input" name="" id="mail" placeholder="usuario@ejemplo.com">
+            <div class="form__flex">
+                <label for="viejocliente" class="form__label">Ya soy cliente</label>
+                <input type="radio" id="viejocliente" name="cliente">
+
+                <label for="nuevocliente" class="form__label">Nuevo cliente</label>
+                <input type="radio" class="form__input" id="nuevocliente" name="cliente">
+            </div>
+
+            <label for="consulta" class="form__label">Consulta:</label> 
+            <textarea name="" class="form__input" id="consulta" cols="40" rows="10" placeholder="Escribinos acá tu consulta"></textarea>
+            
+            <div class="form__flex">
+                <label for="newsletter" class="form__label" hidden>Newsletter</label>
+                <input type="checkbox" class="form__input" id="newsletter"> Recibir nuestro Newsletter
+            </div>
+
+            <input type="submit" name="" id="submit" class="btn btn__form">
+        </form>
+    </section>
+
+    <!-- FAQ -->
+    <div class="productos__faq">
+        <div class="faq">
+            <span class="iconify faq__icon" data-icon="ic:baseline-published-with-changes" data-inline="false"></span>
+            <h3>
+                Cambios y devoluciones
+            </h3>
+            <p> Conocé sobre nuestro botón de arrepentimiento</p>
+        </div>
+
+        <div class="faq">
+            <span class="iconify faq__icon" data-icon="mdi:truck-fast-outline" data-inline="false"></span>
+            <h3>
+                Envíos a todo el país
+            </h3>
+            <p>Consultá tiempos y costos</p>
+        </div>
+
+        <div class="faq">
+            <span class="iconify faq__icon" data-icon="carbon:chat-bot" data-inline="false"></span>
+            <h3>
+                Asesorate
+            </h3>
+            <p>Te ayudamos a crear el espacio ideal para vos</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <section class="footer">
+        <div class="footer__subscription">
+            <label for="newsletter" hidden>Deja tu mail para suscribirte</label>
+            <input type="email" id="newsletter" required placeholder="usuario@ejemplo.com">
+            <button type="input" class="form__btn">Suscribirme</button>
+        </div>
+        
+        <div class="redes">
+            <h3>Redes</h3>
+            <ul>
+                <li><a href="#">
+                    <span class="iconify redes__icon redes__icon--fb" data-icon="entypo-social:facebook" data-inline="false"></span>
+                </a></li>
+                <li><a href="#">
+                    <span class="iconify redes__icon redes__icon--ig" data-icon="ant-design:instagram-filled" data-inline="false"></span>
+                </a></li>
+                <li><a href="#"><span class="iconify redes__icon redes__icon--pn" data-icon="fa:pinterest-square" data-inline="false"></span></a></li>
+            </ul>
+        </div>
+        
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li>Av. Tamborini 5400 - Villa Urquiza, CABA</li>
+                <li>+54 11 35433453</li> 
+                <li>contacto@olimpadesign.com</li>  
+            </ul>
+        </div>
+        
+        <div class="mapa">
+            <h3>Mapa de sitio</h3>
+        
+            <ul class="mapa__list">
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <div class="footer__payment">
+        <p> Metodos de Pago </p> 
+        <img src="images/tarjetasfooter.png" alt="tarjetas">
+        <p> Formas de envío </p>
+    </div>
+    
+    <div class="copyright">
+        <p> Copyright &copy; 2021 </p>
+    </div>
+</footer>
+
+</body>
+</html>
