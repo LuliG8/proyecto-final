@@ -474,35 +474,35 @@ footer .copyright p {
 }
 
 .products .products__gallery .gallery__prod #prod1 {
-  background: url("../../images/nlprod1.jpg") no-repeat 90% 80%/cover;
+  background: url("../images/nlprod1.jpg") no-repeat 90% 80%/cover;
 }
 
 .products .products__gallery .gallery__prod #prod2 {
-  background: url("../../images/nlprod2.jpg") no-repeat center/cover;
+  background: url("../images/nlprod2.jpg") no-repeat center/cover;
 }
 
 .products .products__gallery .gallery__prod #prod3 {
-  background: url("../../images/nlprod3.jpg") no-repeat 100% 90%/cover;
+  background: url("../images/nlprod3.jpg") no-repeat 100% 90%/cover;
 }
 
 .products .products__gallery .gallery__prod #prod4 {
-  background: url("../../images/nlprod4.jpg") no-repeat center/cover;
+  background: url("../images/nlprod4.jpg") no-repeat center/cover;
 }
 
 .products .products__gallery .gallery__prod #prodprom1 {
-  background: url("../../images/pdprod1.jpg") no-repeat 100% 100%/cover;
+  background: url("../images/pdprod1.jpg") no-repeat 100% 100%/cover;
 }
 
 .products .products__gallery .gallery__prod #prodprom2 {
-  background: url("../../images/pdprod2.jpg") no-repeat center/cover;
+  background: url("../images/pdprod2.jpg") no-repeat center/cover;
 }
 
 .products .products__gallery .gallery__prod #prodprom3 {
-  background: url("../../images/pdprod3.jpg") no-repeat center/cover;
+  background: url("../images/pdprod3.jpg") no-repeat center/cover;
 }
 
 .products .products__gallery .gallery__prod #prodprom4 {
-  background: url("../../images/pdprod4.jpg") no-repeat 100% 30%/cover;
+  background: url("../images/pdprod4.jpg") no-repeat 100% 30%/cover;
 }
 
 .products .products__gallery .gallery__prod .card__text {
@@ -778,47 +778,47 @@ footer .copyright p {
 }
 
 .products__section .products__card #prod1 {
-  background: url("../../images/productos/prod1.jpg") no-repeat 90% 80%/cover;
+  background: url("../images/productos/prod1.jpg") no-repeat 90% 80%/cover;
 }
 
 .products__section .products__card #prod2 {
-  background: url("../../images/productos/prod2.jpg") no-repeat center/cover;
+  background: url("../images/productos/prod2.jpg") no-repeat center/cover;
 }
 
 .products__section .products__card #prod3 {
-  background: url("../../images/productos/prod3.jpg") no-repeat 100% 90%/cover;
+  background: url("../images/productos/prod3.jpg") no-repeat 100% 90%/cover;
 }
 
 .products__section .products__card #prod4 {
-  background: url("../../images/productos/prod4.jpg") no-repeat center/cover;
+  background: url("../images/productos/prod4.jpg") no-repeat center/cover;
 }
 
 .products__section .products__card #prod5 {
-  background: url("../../images/productos/prod5.jpg") no-repeat 100% 100%/cover;
+  background: url("../images/productos/prod5.jpg") no-repeat 100% 100%/cover;
 }
 
 .products__section .products__card #prod6 {
-  background: url("../../images/productos/prod6.jpg") no-repeat center/cover;
+  background: url("../images/productos/prod6.jpg") no-repeat center/cover;
 }
 
 .products__section .products__card #prod7 {
-  background: url("../../images/productos/prod7.jpg") no-repeat center/cover;
+  background: url("../images/productos/prod7.jpg") no-repeat center/cover;
 }
 
 .products__section .products__card #prod8 {
-  background: url("../../images/productos/prod8.jpg") no-repeat 100% 30%/cover;
+  background: url("../images/productos/prod8.jpg") no-repeat 100% 30%/cover;
 }
 
 .products__section .products__card #prod9 {
-  background: url("../../images/productos/prod9.jpg") no-repeat 100% 30%/cover;
+  background: url("../images/productos/prod9.jpg") no-repeat 100% 30%/cover;
 }
 
 .products__section .products__card #prod10 {
-  background: url("../../images/productos/prod10.jpg") no-repeat 100% 30%/cover;
+  background: url("../images/productos/prod10.jpg") no-repeat 100% 30%/cover;
 }
 
 .products__section .products__card #prod11 {
-  background: url("../../images/productos/prod11.jpg") no-repeat 100% 30%/cover;
+  background: url("../images/productos/prod11.jpg") no-repeat 100% 30%/cover;
 }
 
 .products__section .products__card .products__text {
@@ -935,7 +935,7 @@ footer .copyright p {
 }
 
 .aboutus #aboutus__img1 {
-  background: url("../../images/us-couple.jpg") no-repeat 50% 100%/cover;
+  background: url("../images/us-couple.jpg") no-repeat 50% 100%/cover;
 }
 
 .aboutus #aboutus__img2 {
@@ -1019,22 +1019,22 @@ footer .copyright p {
 }
 
 .container .colim2 {
-  background: url("../../images/prod.jpg") no-repeat center/cover;
+  background: url("../images/prod.jpg") no-repeat center/cover;
   height: 100%;
 }
 
 .container .colim3 {
-  background: url("../../images/pd-prod1.jpg") no-repeat 100%/cover;
+  background: url("../images/pd-prod1.jpg") no-repeat 100%/cover;
   height: 100%;
 }
 
 .container .colim4 {
-  background: url("../../images/pd-prod3.jpg") no-repeat center/cover;
+  background: url("../images/pd-prod3.jpg") no-repeat center/cover;
   height: 100%;
 }
 
 .container .colim5 {
-  background: url("../../images/us-pic4.jpg") no-repeat center/cover;
+  background: url("../images/us-pic4.jpg") no-repeat center/cover;
   height: 100%;
 }
 
