@@ -311,7 +311,7 @@ footer .copyright p {
 }
 
 .info {
-  background-color: #E6E2E3;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1463,15 +1463,14 @@ footer .copyright p {
   align-items: center;
   height: 120px;
   gap: .3em;
+  background-color: whitesmoke;
 }
 
 .products__faq .faq .faq__icon {
-  width: 5em;
-  height: 5em;
-  color: white;
-  background-color: #F3D848;
-  padding: .2em;
-  border-radius: 2em;
+  color: #4F4141;
+  width: 3.4em;
+  height: 3.4em;
+  margin-bottom: .5em;
 }
 
 .products__faq .faq h3 {
