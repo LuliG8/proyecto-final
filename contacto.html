@@ -166,30 +166,35 @@
 <footer>
     <section class="footer">
         <div class="footer__subscription">
-            <label for="newsletter" hidden>Deja tu mail para suscribirte</label>
-            <input type="email" id="newsletter" required placeholder="usuario@ejemplo.com">
-            <button type="input" class="form__btn">Suscribirme</button>
+            <div class="footer__form">
+                <label for="newsletter" hidden>Deja tu mail para suscribirte</label>
+                <input type="email" id="newsletter" required placeholder="usuario@ejemplo.com">
+                <button type="input" class="form__btn">Suscribirme</button>
+            </div>
+            <div class="arrepentimiento">
+                <li><a href="#">Botón de arrepentimiento</a></li>
+            </div>
         </div>
         
         <div class="redes">
             <h3>Redes</h3>
             <ul>
-                <li><a href="#">
+                <li><a href="https://www.facebook.com/Olimpiadesign/">
                     <span class="iconify redes__icon redes__icon--fb" data-icon="entypo-social:facebook" data-inline="false"></span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="https://www.instagram.com/olimpa.design/">
                     <span class="iconify redes__icon redes__icon--ig" data-icon="ant-design:instagram-filled" data-inline="false"></span>
                 </a></li>
-                <li><a href="#"><span class="iconify redes__icon redes__icon--pn" data-icon="fa:pinterest-square" data-inline="false"></span></a></li>
+                <li><a href="https://ar.pinterest.com/olimpadesign"><span class="iconify redes__icon redes__icon--pn" data-icon="fa:pinterest-square" data-inline="false"></span></a></li>
             </ul>
         </div>
         
         <div class="contacto">
             <h3>Contacto</h3>
             <ul>
-                <li>Av. Tamborini 5400 - Villa Urquiza, CABA</li>
-                <li>+54 11 35433453</li> 
-                <li>contacto@olimpadesign.com</li>  
+                <li><span class="iconify maps" data-icon="el:map-marker-alt"></span>Av. Tamborini 5400 - Villa Urquiza, CABA</li>
+                <li><span class="iconify phone" data-icon="el:phone-alt"></span>+ 54 11 3543-3453</li> 
+                <li><span class="iconify mail" data-icon="entypo:mail"></span>contacto@olimpadesign.com</li>  
             </ul>
         </div>
         
@@ -197,18 +202,20 @@
             <h3>Mapa de sitio</h3>
         
             <ul class="mapa__list">
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="productos.html">Productos</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="diseno.html">Crea un diseño</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="sobrenosotros.html">Nosotros</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="contacto.html">Contacto</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="#">Ayuda</a></li>
             </ul>
         </div>
     </section>
     
     <div class="footer__payment">
-        <p> Metodos de Pago </p> 
-        <img src="images/tarjetasfooter.png" alt="tarjetas">
-        <p> Formas de envío </p>
+        <p class="payment"> Metodos de Pago </p> 
+        <img src="images/tarjetasfooter.png" alt="tarjetas" class="payment">
+        <p class="ship"> Formas de envío </p>
+        <img src="images/envio.jpg" alt="envios" class="ship">
     </div>
     
     <div class="copyright">

@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;0,500;0,600;0,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap");
 header {
   position: sticky;
   top: 0;
@@ -192,6 +192,10 @@ footer a, footer header .menu--large .content__logo .registro ul li .compras, he
   font-size: .7rem;
 }
 
+footer a:hover, footer header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li footer .compras:hover {
+  color: #FFCB00;
+}
+
 footer .footer {
   display: flex;
   flex-direction: row-reverse;
@@ -200,10 +204,40 @@ footer .footer {
   padding-bottom: 2em;
 }
 
-footer .footer .contacto li {
+footer .footer .contacto ul {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+footer .footer .contacto ul li {
   color: white;
   font-size: .7rem;
   padding: .2em;
+}
+
+footer .footer .contacto ul li .maps {
+  padding-right: 2px;
+  color: #F3D848;
+  font-size: 13px;
+  line-height: 1;
+  margin-right: .3em;
+}
+
+footer .footer .contacto ul li .phone {
+  padding-right: 2px;
+  color: #F3D848;
+  font-size: 12px;
+  line-height: 1;
+  margin-right: .3em;
+}
+
+footer .footer .contacto ul li .mail {
+  padding-right: 2px;
+  color: #F3D848;
+  font-size: 15px;
+  line-height: 1;
+  margin-right: .3em;
 }
 
 footer .footer .redes ul {
@@ -220,12 +254,12 @@ footer .footer .redes ul li a, footer .footer .redes header .menu--large .conten
   font-size: 2em;
 }
 
-footer .footer .redes ul li a redes__icon--fb, footer .footer .redes header .menu--large .content__logo .registro ul li .compras redes__icon--fb, header .menu--large .content__logo .registro footer .footer .redes ul li .compras redes__icon--fb {
+footer .footer .redes ul li a .redes__icon--fb, footer .footer .redes header .menu--large .content__logo .registro ul li .compras .redes__icon--fb, header .menu--large .content__logo .registro footer .footer .redes ul li .compras .redes__icon--fb {
   font-size: 1.1em;
 }
 
-footer .footer .redes ul li a redes__icon--ig, footer .footer .redes header .menu--large .content__logo .registro ul li .compras redes__icon--ig, header .menu--large .content__logo .registro footer .footer .redes ul li .compras redes__icon--ig {
-  font-size: 1.3em;
+footer .footer .redes ul li a .redes__icon--ig, footer .footer .redes header .menu--large .content__logo .registro ul li .compras .redes__icon--ig, header .menu--large .content__logo .registro footer .footer .redes ul li .compras .redes__icon--ig {
+  width: 1.27em;
 }
 
 footer .footer .redes ul li a:hover, footer .footer .redes header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro footer .footer .redes ul li .compras:hover {
@@ -234,10 +268,48 @@ footer .footer .redes ul li a:hover, footer .footer .redes header .menu--large .
 }
 
 footer .footer .footer__subscription {
-  padding-top: 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1.7em;
 }
 
-footer .footer__payment {
+footer .footer .footer__subscription .footer__form {
+  padding-top: 3em;
+  display: flex;
+  flex-flow: row;
+}
+
+footer .footer .footer__subscription .footer__form input {
+  /* width: 100%; */
+  height: 1.6em;
+  border: .15em solid white;
+  border-top-left-radius: .4em;
+  border-bottom-left-radius: .3em;
+  overflow: hidden;
+  padding: .3em .7em;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+}
+
+footer .footer .footer__subscription .arrepentimiento a, footer .footer .footer__subscription .arrepentimiento header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li footer .footer .footer__subscription .arrepentimiento .compras {
+  color: #cda45e;
+  font-weight: 300;
+}
+
+footer .footer .footer__subscription .arrepentimiento a:hover, footer .footer .footer__subscription .arrepentimiento header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li footer .footer .footer__subscription .arrepentimiento .compras:hover {
+  color: whitesmoke;
+}
+
+footer .footer .mapa__list .chevron--right {
+  padding-right: 2px;
+  color: #cda45e;
+  font-size: 15px;
+  line-height: 1;
+  margin-right: .3em;
+}
+
+.footer__payment {
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -245,31 +317,63 @@ footer .footer__payment {
   color: white;
   background-color: whitesmoke;
   gap: 2em;
+  padding: .1em;
 }
 
-footer .footer__payment p {
+.footer__payment p {
   color: black;
+  margin-left: .8em;
+  font-weight: 600;
 }
 
-footer .footer__payment img {
-  width: 300px;
+.footer__payment img {
+  width: 200px;
   height: auto;
+  margin-right: 1.7em;
+  max-height: 19px;
 }
 
-footer .copyright p {
+.copyright p {
   color: white;
+  margin-left: .8em;
+  padding: .4em;
 }
 
 @media only screen and (max-width: 800px) {
-  /* FOOTER */
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1em;
-  }
   footer h3 {
     padding-top: 1em;
+  }
+  footer .footer {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
+  }
+  footer .footer .contacto li {
+    font-size: .9rem;
+    padding: .2em;
+  }
+  footer .footer .redes ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer .redes li {
+    margin: 0 .2em 0 .2em;
+  }
+  footer .footer .redes a, footer .footer .redes header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li footer .footer .redes .compras {
+    font-size: 2em;
+  }
+  footer .footer .footer__subscription {
+    align-self: center;
+    gap: 1em;
+  }
+  footer .footer__payment img {
+    margin: 0;
+    width: unset;
+  }
+  footer .footer__payment .ship {
+    display: none;
   }
 }
 
@@ -314,25 +418,51 @@ footer .copyright p {
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
-  padding: 2em;
+  margin: 2em 5em;
 }
 
-.info .info__container--borderright {
-  padding-right: 2em;
-  border-right: 2px solid white;
+.info .info__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: .1em;
 }
 
-.info .info__icon {
-  color: #4F4141;
+.info .info__container .info__icon--support, .info .info__container .info__icon--home {
+  color: #D8BCA8;
   width: 3.4em;
   height: 3.4em;
-  margin-bottom: .5em;
+}
+
+.info .info__container .info__icon--design {
+  color: #D8BCA8;
+  width: 2.6em;
+  height: 2.7em;
+  margin: .5em;
 }
 
 .info .info__container h3 {
-  font-size: 1em;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: .03rem;
+  text-transform: uppercase;
+  margin: .6em;
+}
+
+.info .info__container p {
+  font-family: 'Raleway', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .01rem;
+  line-height: 1.5em;
+  max-width: 80%;
+}
+
+.info .info__container--border {
+  border-right: 1px solid #4F4141;
+  border-left: 1px solid #4F4141;
 }
 
 /* CARROUSEL ESTILOS */
@@ -476,7 +606,7 @@ footer .copyright p {
 }
 
 .products .products__gallery .gallery__prod #prod1 {
-  background: url("../images/nlprod1.jpg") no-repeat 90% 80%/cover;
+  background: url("../images/nlprod1.jpg") no-repeat center/cover;
 }
 
 .products .products__gallery .gallery__prod #prod2 {
@@ -701,7 +831,7 @@ footer .copyright p {
 }
 
 /* SUBMENU */
-.products__menu--category {
+.products__menu .products__menu--category {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -712,20 +842,22 @@ footer .copyright p {
   background-color: black;
   min-height: 40px;
   margin-bottom: 0;
+  border-top-right-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
 }
 
-.products__menu--category .products__menu--item {
+.products__menu .products__menu--category .products__menu--item {
   padding: 1em;
 }
 
-.products__menu--category .products__menu--item a, .products__menu--category .products__menu--item header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__menu--category .products__menu--item .compras {
+.products__menu .products__menu--category .products__menu--item a, .products__menu .products__menu--category .products__menu--item header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__menu .products__menu--category .products__menu--item .compras {
   text-decoration: none;
   color: #B28604;
 }
 
-.products__menu--category .products__menu--item .products__submenu {
+.products__menu .products__menu--category .products__menu--item .products__submenu {
   display: none;
-  background-color: black;
+  background-color: #181818;
   position: absolute;
   top: 100%;
   left: 0;
@@ -733,25 +865,25 @@ footer .copyright p {
   min-height: 80px;
 }
 
-.products__menu--category .products__menu--item .products__submenu a, .products__menu--category .products__menu--item .products__submenu header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__menu--category .products__menu--item .products__submenu .compras {
+.products__menu .products__menu--category .products__menu--item .products__submenu a, .products__menu .products__menu--category .products__menu--item .products__submenu header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__menu .products__menu--category .products__menu--item .products__submenu .compras {
   color: white;
   font-size: 1em;
 }
 
-.products__menu--category .products__menu--item .products__submenu .subitem__icon {
+.products__menu .products__menu--category .products__menu--item .products__submenu .subitem__icon {
   color: white;
   font-size: 2.7em;
 }
 
-.products__menu--category .products__menu--item .subitem__icon:hover {
+.products__menu .products__menu--category .products__menu--item .subitem__icon:hover {
   color: #DDAD19;
 }
 
-.products__menu--category .products__menu--item a:hover, .products__menu--category .products__menu--item header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .products__menu--category .products__menu--item .compras:hover {
+.products__menu .products__menu--category .products__menu--item a:hover, .products__menu .products__menu--category .products__menu--item header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .products__menu .products__menu--category .products__menu--item .compras:hover {
   color: #DDAD19;
 }
 
-.products__menu--category .products__menu--item:hover > .products__submenu {
+.products__menu .products__menu--category .products__menu--item:hover > .products__submenu {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -1177,7 +1309,7 @@ footer .copyright p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #4F4141;
+  background-color: black;
   gap: .7em;
 }
 
@@ -1197,14 +1329,21 @@ footer .copyright p {
 
 .banner__discount {
   background-color: #4F4141;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  border-bottom-right-radius: 1em;
+  width: 98%;
 }
 
-.text__discount {
-  font-style: italic;
+.banner__discount .text__discount {
   font-size: .7em;
+  color: white;
   text-align: center;
-  padding: .6em 0 .3em 0;
   text-transform: unset;
+  padding: .4em 0;
 }
 
 /* VER MAS BUTTON */
@@ -1239,7 +1378,7 @@ footer .copyright p {
   height: 2.3em;
   color: black;
   border: none;
-  border-top-right-radius: .3em;
+  border-top-right-radius: .5em;
   /* border-bottom-right-radius: .3em; */
   outline: none;
   cursor: pointer;
@@ -1247,7 +1386,7 @@ footer .copyright p {
   letter-spacing: .1em;
   text-align: center;
   font-size: .7em;
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Lato', sans-serif;
 }
 
@@ -1351,42 +1490,14 @@ footer .copyright p {
   transform: scaleY(0);
 }
 
-/* SUSCRIPCION FOOTER */
-.suscripcionFooter {
-  display: flex;
-  flex-flow: row;
+/* CARRITO DE COMPRAS */
+.badge {
+  position: sticky;
+  top: 1px;
+  border: 1px solid #D8BCA8;
 }
 
-.suscripcionFooter input {
-  /* width: 100%; */
-  height: 1.6em;
-  border: .15em solid white;
-  border-top-left-radius: .4em;
-  border-bottom-left-radius: .3em;
-  overflow: hidden;
-  padding: .3em .7em;
-  outline: none;
-  font-family: 'Lato', sans-serif;
-}
-
-.suscripcionFooter button {
-  background-color: lightgray;
-  width: 110px;
-  height: 2.3em;
-  color: black;
-  border: none;
-  border-top-right-radius: .3em;
-  /* border-bottom-right-radius: .3em; */
-  outline: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  text-align: center;
-  font-size: .7em;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
-}
-
+/* PRODUCTOS */
 .badge--new {
   display: inline-block;
   position: absolute;
@@ -1398,11 +1509,11 @@ footer .copyright p {
   text-transform: uppercase;
   border-bottom-left-radius: .5em;
   font-size: 0.7rem;
-  letter-spacing: 0.13rem;
-  color: white;
+  letter-spacing: 0.14rem;
+  color: whitesmoke;
   background-color: black;
-  padding: 0.6em;
-  box-shadow: 0 0px 10px .1px blackw;
+  padding: 0.7em 1.2em;
+  box-shadow: 0 5px 15px -5px black;
 }
 
 .badge--sale {
@@ -1415,11 +1526,11 @@ footer .copyright p {
   text-align: center;
   text-transform: uppercase;
   border-bottom-left-radius: .5em;
-  font-size: 0.8rem;
-  letter-spacing: 0.25em;
+  font-size: 0.76rem;
+  letter-spacing: 0.34em;
   color: #F3D848;
   background-color: black;
-  padding: 0.3em 0.9em;
+  padding: 0.6em 1.3em;
   box-shadow: 0 5px 15px -5px black;
 }
 
@@ -1441,10 +1552,22 @@ footer .copyright p {
   box-shadow: 0 5px 15px -5px black;
 }
 
-.badge {
-  position: sticky;
-  top: 1px;
-  border: 1px solid #D8BCA8;
+.badge--agotado {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom-left-radius: .5em;
+  font-size: 0.7rem;
+  letter-spacing: 0.17rem;
+  color: #D8BCA8;
+  background-color: black;
+  padding: 0.8em 1.3em;
+  box-shadow: 0 5px 15px -5px black;
 }
 
 .products__faq {
@@ -1529,6 +1652,8 @@ footer .copyright p {
 * h1 {
   color: #B28604;
   text-transform: uppercase;
+  margin: 1.5em, auto;
+  font-family: 'Raleway', sans-serif;
 }
 
 * h1 span {
@@ -1539,11 +1664,14 @@ footer .copyright p {
   color: #C8A446;
   text-align: center;
   text-decoration: underline #C8A446 .1em;
-  text-underline-offset: .4em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  text-underline-offset: .5em;
+  margin: 2em 0;
   line-height: 1.5em;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 * h3 {
@@ -1667,38 +1795,6 @@ footer .copyright p {
   }
   .subscription__form {
     display: flex;
-  }
-  .footer {
-    display: flex;
-    align-items: center;
-    padding-bottom: 2em;
-  }
-  .copyright {
-    color: white;
-    text-align: center;
-  }
-  .footer__payment {
-    color: white;
-    background-color: black;
-    text-align: center;
-  }
-  .contacto li {
-    color: white;
-    font-size: .9rem;
-    padding: .2em;
-  }
-  .redes ul {
-    display: flex;
-    flex-direction: row;
-  }
-  .redes li {
-    margin: 0 .2em 0 .2em;
-  }
-  .redes a, .redes header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .redes .compras {
-    font-size: 2em;
-  }
-  .footer__subscription {
-    display: none;
   }
   .info {
     display: flex;

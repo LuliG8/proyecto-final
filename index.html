@@ -10,6 +10,7 @@
     <meta name="keywords" content="Decoración, muebles, hogar, diseño de interior, madera">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -144,28 +145,28 @@
     <span class="iconify whatsapp" data-icon="logos:whatsapp" data-inline="false" id="whatsapp"></span>
 
     <section class="info">
-        <div class="info__container info__container--borderright">
-            <span class="iconify info__icon" data-icon="ic:baseline-design-services" data-inline="false"></span>
+        <div class="info__container">
+            <span class="iconify info__icon info__icon--design" data-icon="whh:design"></span>
             <h3>
                 Armá tu diseño
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nostrum.</p>
+            <p>Si tenes un diseño en mente, contanos y nosotros lo creamos para vos.</p>
         </div>
     
-        <div class="info__container info__container--borderright">
-            <span class="iconify info__icon" data-icon="carbon:help-desk" data-inline="false"></span>
+        <div class="info__container info__container--border">
+            <span class="iconify info__icon info__icon--support" data-icon="bx:bx-support"></span>
             <h3>
                 Asesorate
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nostrum.</p>
+            <p>Asesorate sobre decoración y diseño con nuestro equipo de profesionales.</p>
         </div>
     
         <div class="info__container">
-            <span class="iconify info__icon" data-icon="bx:bxs-home-heart" data-inline="false"></span> 
+            <span class="iconify info__icon info__icon--home" data-icon="bx:bxs-home-heart" data-inline="false"></span> 
             <h3>
                 Decorá tu hogar
             </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nostrum.</p>
+            <p>Decorá y llevá calidez a tu hogar con nuestros productos de diseño.</p>
         </div>
     </section>
     
@@ -215,6 +216,7 @@
                     <span>$8.000</span>
                     <a href="#" class="vermas__btn">Ver más</a>
                 </div>
+                <div class="badge--new">New in</div>
             </div>
 
             <div class="gallery__prod">
@@ -224,6 +226,7 @@
                     <span>$12.000</span>
                     <a href="#" class="vermas__btn">Ver más</a>
                 </div>
+                <div class="badge--new">New in</div>
             </div>
 
             <div class="gallery__prod">
@@ -233,6 +236,7 @@
                     <span>$16.500</span>
                     <a href="#" class="vermas__btn">Ver más</a>
                 </div>
+                <div class="badge--new">New in</div>
             </div>
 
             <div class="gallery__prod">
@@ -242,6 +246,7 @@
                     <span>$1.500</span>
                     <a href="#" class="vermas__btn">Ver más</a>
                 </div>
+                <div class="badge--new">New in</div>
             </div>
         </article>
 
@@ -254,7 +259,7 @@
             <h2>Armamos tu diseño</h2>
             <P><span>Las posibilidades de diseño son infinitas.</span>
             Personaliza tu mueble a partir de cientos de plantillas, maderasd y combinaciones de colores en nuestro estudio de diseño.</P>
-            <a href="armatudiseno.html" class="diseno__btn">Probar ya &#10137</a>
+            <a href="diseno.html" class="diseno__btn">Probar ya &#10137</a>
         </div>
     </section>
 
@@ -384,41 +389,47 @@
         <div>
             <span class="and__symbol">+</span>
         </div>
-        <div class="methods__content metodos">
+        <div class="methods__content">
             <h3>Formas de envío</h3>
             <p>Envíos a todo el país a través de correo Argentino</p>
             <img src="images/correo.png" alt="formasenvio"> 
         </div>
     </section>
+    
 </main>
 
 <footer>
     <section class="footer">
         <div class="footer__subscription">
-            <label for="newsletter" hidden>Deja tu mail para suscribirte</label>
-            <input type="email" id="newsletter" required placeholder="usuario@ejemplo.com">
-            <button type="input" class="form__btn">Suscribirme</button>
+            <div class="footer__form">
+                <label for="newsletter" hidden>Deja tu mail para suscribirte</label>
+                <input type="email" id="newsletter" required placeholder="usuario@ejemplo.com">
+                <button type="input" class="form__btn">Suscribirme</button>
+            </div>
+            <div class="arrepentimiento">
+                <li><a href="#">Botón de arrepentimiento</a></li>
+            </div>
         </div>
         
         <div class="redes">
             <h3>Redes</h3>
             <ul>
-                <li><a href="#">
+                <li><a href="https://www.facebook.com/Olimpiadesign/">
                     <span class="iconify redes__icon redes__icon--fb" data-icon="entypo-social:facebook" data-inline="false"></span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="https://www.instagram.com/olimpa.design/">
                     <span class="iconify redes__icon redes__icon--ig" data-icon="ant-design:instagram-filled" data-inline="false"></span>
                 </a></li>
-                <li><a href="#"><span class="iconify redes__icon redes__icon--pn" data-icon="fa:pinterest-square" data-inline="false"></span></a></li>
+                <li><a href="https://ar.pinterest.com/olimpadesign"><span class="iconify redes__icon redes__icon--pn" data-icon="fa:pinterest-square" data-inline="false"></span></a></li>
             </ul>
         </div>
         
         <div class="contacto">
             <h3>Contacto</h3>
             <ul>
-                <li>Av. Tamborini 5400 - Villa Urquiza, CABA</li>
-                <li>+54 11 35433453</li> 
-                <li>contacto@olimpadesign.com</li>  
+                <li><span class="iconify maps" data-icon="el:map-marker-alt"></span>Av. Tamborini 5400 - Villa Urquiza, CABA</li>
+                <li><span class="iconify phone" data-icon="el:phone-alt"></span>+ 54 11 3543-3453</li> 
+                <li><span class="iconify mail" data-icon="entypo:mail"></span>contacto@olimpadesign.com</li>  
             </ul>
         </div>
         
@@ -426,18 +437,20 @@
             <h3>Mapa de sitio</h3>
         
             <ul class="mapa__list">
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="productos.html">Productos</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="diseno.html">Crea un diseño</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="sobrenosotros.html">Nosotros</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="contacto.html">Contacto</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="#">Ayuda</a></li>
             </ul>
         </div>
     </section>
     
     <div class="footer__payment">
-        <p> Metodos de Pago </p> 
-        <img src="images/tarjetasfooter.png" alt="tarjetas">
-        <p> Formas de envío </p>
+        <p class="payment"> Metodos de Pago </p> 
+        <img src="images/tarjetasfooter.png" alt="tarjetas" class="payment">
+        <p class="ship"> Formas de envío </p>
+        <img src="images/envio.jpg" alt="envios" class="ship">
     </div>
     
     <div class="copyright">
