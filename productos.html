@@ -186,9 +186,8 @@
         <p class="text__discount">Desde <span class="negrita">60% off</span></p>
     </div>
 
-    <section class="products">
-        
-        <h2>Muebles para Dormitorio</h2>
+    <section class="products__header">
+        <h2>Muebles para dormitorios</h2>
 
         <div class="orderby"> 
         <!-- BREADCRUMB -->
@@ -210,6 +209,7 @@
                     <option value="ztoa">Ordenar: Z - A</option>
                 </select>
         </div>  
+    </section>
 
     <!-- PRODUCTOS -->
     <section class="products__section">
@@ -219,7 +219,7 @@
             <div class="products__text">
                 <h3>Mesa de Luz Olimpia</h3>
                 <span class="products__span">$12.000</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
             <div class="badge--new">New in</div>
         </div>
@@ -229,8 +229,9 @@
             <div class="products__text">
                 <h3>Mesa de Luz Kuzco</h3>
                 <span class="products__span">$8.000</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
+            <div class="badge--new">New in</div>
         </div>
 
         <div class="products__card">
@@ -238,7 +239,7 @@
             <div class="products__text">
                 <h3>Mesa de Luz Nymeria</h3>
                 <span class="products__span">$6.500</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
         </div>
 
@@ -247,7 +248,7 @@
             <div class="products__text">
                 <h3>Mesa de Luz Shenzi</h3>
                 <span class="products__span">$13.000</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
                 <div class="badge--sale">Sale</div>
             </div>
         </div>
@@ -257,7 +258,7 @@
             <div class="products__text">
                 <h3>Mesa de Luz Melek</h3>
                 <span class="products__span">$5.200</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
                 <div class="badge--sale">Sale</div>
             </div>
         </div>
@@ -267,7 +268,7 @@
             <div class="products__text">
                 <h3>Mesa de Luz Vitania</h3>
                 <span class="products__span">$8.300</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
         </div>
 
@@ -276,7 +277,7 @@
             <div class="products__text">
                 <h3>Mesa de Luz Silvestre</h3>
                 <span class="products__span">$9.100</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
         </div>
 
@@ -285,7 +286,7 @@
             <div class="products__text">
                 <h3>Cómoda Marble Nerón</h3>
                 <span class="products__span">$13.500</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
         </div>
 
@@ -294,7 +295,7 @@
             <div class="products__text">
                 <h3>Cómoda Tina</h3>
                 <span class="products__span">$10.000</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
             <div class="badge--agotado">Agotado</div>
         </div>
@@ -304,7 +305,7 @@
             <div class="products__text">
                 <h3>Rack TV Nala</h3>
                 <span class="products__span">$16.000</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
             <div class="badge--agotado">Agotado</div>
         </div>
@@ -314,7 +315,7 @@
             <div class="products__text">
                 <h3>Rack XL Agustina</h3>
                 <span class="products__span">$23.000</span>
-                <div class="products__btn"><a href="#">Comprar</a></div>
+                <div class="products__btn"><a href="#"><span>Comprar</span></a></div>
             </div>
             <div class="badge--agotado">Agotado</div>
         </div>
@@ -331,31 +332,31 @@
         </ul>
     </nav>
 
-    <div class="products__faq">
-        <div class="faq faq__border">
-            <span class="iconify faq__icon" data-icon="ic:baseline-published-with-changes" data-inline="false"></span>
+    <section class="products__faq">
+        <div class="faq">
+            <span class="iconify faq__icon faq__icon--dev" data-icon="ic:baseline-published-with-changes" data-inline="false"></span>
             <h3>
                 Cambios y devoluciones
             </h3>
             <p> Conocé sobre nuestro botón de arrepentimiento</p>
         </div>
 
-        <div class="faq faq__border">
-            <span class="iconify faq__icon" data-icon="mdi:truck-fast-outline" data-inline="false"></span>
+        <div class="faq faq--border">
+            <span class="iconify faq__icon faq__icon--ship" data-icon="mdi:truck-fast-outline" data-inline="false"></span>
             <h3>
                 Envíos a todo el país
             </h3>
-            <p>Consultá tiempos y costos</p>
+            <p>Consultá nuestros tiempos y costos para tu locación</p>
         </div>
 
         <div class="faq">
-            <span class="iconify faq__icon" data-icon="carbon:chat-bot" data-inline="false"></span>
+            <span class="iconify faq__icon faq__icon--help" data-icon="carbon:chat-bot" data-inline="false"></span>
             <h3>
-                Asesorate
+                Consultanos
             </h3>
             <p>Te ayudamos a crear el espacio ideal para vos</p>
         </div>
-    </div>
+    </section>
 
 </main>
 
