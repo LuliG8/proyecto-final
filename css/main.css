@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;0,500;0,600;0,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap");
+/* LETRAS */
+/* COLORES */
 header {
   position: sticky;
   top: 0;
@@ -840,8 +842,9 @@ footer .copyright p {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-  margin: 6em auto;
+  margin: 2em auto;
   height: auto;
+  width: 100%;
   background: url("https://i.pinimg.com/564x/c9/e4/c0/c9e4c0a1e98796560ada763fa7e2d22c.jpg");
   background-repeat: no-repeat;
   background-position: center 100%;
@@ -1169,7 +1172,42 @@ footer .copyright p {
 .products__section .products__card .products__image {
   width: 100%;
   flex-basis: 200px;
+  position: relative;
   transition: all ease-in-out 0.4s;
+}
+
+.products__section .products__card .products__image .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+
+.products__section .products__card .products__image .social a, .products__section .products__card .products__image .social header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__section .products__card .products__image .social .compras {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #4F4141;
+  background: rgba(255, 255, 255, 0.8);
+  width: 36px;
+  height: 36px;
+  transition: color 0.3s;
+  margin: 0 6px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+}
+
+.products__section .products__card .products__image .social a:hover, .products__section .products__card .products__image .social header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .products__section .products__card .products__image .social .compras:hover {
+  color: #151515;
+  background: #F3D848;
+}
+
+.products__section .products__card .products__image .social span {
+  font-size: 18px;
+  line-height: 0;
 }
 
 .products__section .products__card .products__image:hover {
@@ -1239,6 +1277,36 @@ footer .copyright p {
   color: #4F4141;
 }
 
+.products__section .products__card .products__text .products__sale {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.products__section .products__card .products__text .products__sale .products__oldprice {
+  text-decoration: line-through;
+  color: #B28604;
+}
+
+.products__section .products__card .products__text .products__sale .products__newprice {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #B2AA0D;
+}
+
+.products__section .products__card .products__text .products__sale .products__newprice::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #FFCB00;
+  right: 0;
+}
+
 .products__section .products__card .products__text .products__span {
   color: #C8A446;
   font-size: 1.2em;
@@ -1247,7 +1315,13 @@ footer .copyright p {
 
 .products__section .products__card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0px 15px 1px #FFCB00;
   box-shadow: 0 5px 15px -5px black;
+}
+
+.products__section .products__card:hover .social {
+  opacity: 1;
+  bottom: 15px;
 }
 
 .products__section hr {
@@ -1447,32 +1521,64 @@ footer .copyright p {
 .contact {
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 1em 5em;
+  background: url("../../images/cliente-diseno6.jpg");
+  background-size: cover;
+  width: 100%;
+  filter: grayscale(60%);
+  /* FORM */
+}
+
+.contact h2 {
+  margin: 1.5em 0 .5em;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.contact h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: #B28604;
+  top: 70px;
+  left: 600px;
 }
 
 .contact .contact__text {
-  font-size: .8em;
-  margin: 0;
-  padding-bottom: 2em;
+  font-size: .9em;
+  text-align: center;
+  color: whitesmoke;
+  margin: 0 1em;
 }
 
-.contact .contact__form {
+.contact .contact__container {
+  display: flex;
+  align-items: center;
+  margin: 0 3em;
+  gap: 8%;
+}
+
+.contact .contact__container .contact__form {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-content: center;
-  width: 100%;
+  margin: 3em 0 3em 4em;
+  padding: 2em;
+  min-width: 40%;
+  background-color: white;
+  border-radius: 1em 1em 0 0;
 }
 
-.contact .contact__form .form__label {
+.contact .contact__container .contact__form .form__label {
+  font-family: "Raleway", sans-serif;
   font-size: .9em;
-  margin: .6em;
+  margin: .6em 0;
 }
 
-.contact .contact__form .form__input {
-  font-family: 'Lato', sans-serif;
+.contact .contact__container .contact__form .form__input {
+  font-family: "Raleway", sans-serif;
   font-size: .8em;
   padding: .3em;
   border: none;
@@ -1480,28 +1586,135 @@ footer .copyright p {
   background-color: whitesmoke;
 }
 
-.contact .contact__form .form__input:focus {
+.contact .contact__container .contact__form .form__input:focus {
   outline: #FFCB00;
 }
 
-.contact .contact__form .form__flex {
+.contact .contact__container .contact__form .form__flex {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   gap: 1em;
 }
 
-.contact .contact__form .btn__form {
-  display: inline-block;
-  background-color: #B28604;
+.contact .contact__container .contact__form textarea {
+  resize: none;
+}
+
+.contact .contact__container .contact__info {
+  display: flex;
+  flex-flow: column;
+  align-items: baseline;
+  justify-items: center;
+  gap: 2em;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.contact .contact__container .contact__info .contact__box {
+  display: flex;
+  padding: 1em 2em;
+}
+
+.contact .contact__container .contact__info .contact__box .box {
+  padding: 1rem 0;
+  display: flex;
+  gap: 1.4em;
+}
+
+.contact .contact__container .contact__info .contact__box .box .contact__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  height: 3rem;
+  background: #FFCB00;
+  border-radius: 50%;
+  font-size: 1.3rem;
   color: white;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-size: .7em;
-  font-weight: 600;
-  letter-spacing: .1em;
-  max-width: 100px;
-  margin: 1em;
+}
+
+.contact .contact__container .contact__info .contact__box .box .contact__text {
+  display: flex;
+  flex-flow: column;
+  justify-content: baseline;
+}
+
+.contact .contact__container .contact__info .contact__box .box .contact__text span {
+  font-size: 1.2rem;
+  color: #FFCB00;
+  font-weight: 700;
+  letter-spacing: .03rem;
+  text-align: start;
+}
+
+.contact .contact__container .contact__info .contact__box .box .contact__text p {
+  font-size: .9rem;
+  text-align: start;
+  line-height: 1.5em;
+  min-width: 80%;
+}
+
+@media only screen and (max-width: 850px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__container .contact__form {
+    width: 85%;
+  }
+  .contact__container .contact__info {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact__form {
+    width: 60%;
+  }
+  .contact__info {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .contact__info {
+    display: none;
+  }
+}
+
+/* LISTA */
+.unordered__list {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: .4em;
+  margin: 1.5rem 0;
+}
+
+.unordered__list li {
+  font-family: "Raleway", sans-serif;
+}
+
+.diseno__section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 3em 0;
+}
+
+.diseno__section h2 {
+  position: relative;
+}
+
+.diseno__section h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #B28604;
+  bottom: 10;
+  left: 0;
 }
 
 .diseno__section p {
@@ -1527,88 +1740,101 @@ footer .copyright p {
   margin-top: 0;
 }
 
-.container__galery {
+.container__gallery {
   display: flex;
-  flex-flow: row wrap;
   gap: 1em;
 }
 
-.container__galery .galery__img img {
-  width: 150px;
-  height: 150px;
+.container__gallery .column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.container__gallery .gallery__img img {
+  width: 100%;
 }
 
 /* OPINIONES */
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
+.demo {
+  background-color: #D8BCA8;
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+.demo .testimonial {
+  background: white;
+  text-align: center;
+  padding: 1.5em 1.5em 2em;
+  margin: 0 1.2em 3em;
+  position: relative;
+  height: 350px;
+  border: 2px solid #D8BCA8;
+}
+
+.demo .testimonial .icon {
+  display: inline-block;
+  font-size: 4em;
+  color: #D8BCA8;
+  margin-bottom: .5em;
+  opacity: 0.6;
+}
+
+.demo .testimonial .description {
+  font-family: "Raleway", sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #4F4141;
+  line-height: 1.3em;
+  margin-bottom: 2em;
+}
+
+.demo .testimonial:before, .demo .testimonial:after {
+  content: "";
+  border-top: 40px solid white;
+  border-right: 150px solid transparent;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.demo .testimonial:after {
+  border-right: none;
+  border-left: 135px solid transparent;
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+.demo .testimonial-content {
+  width: 100%;
+}
+
+.demo .testimonial-content .pic {
+  display: inline-block;
+  border: 2px solid white;
   border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 2px 2px #D8BCA8;
+  overflow: hidden;
 }
 
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: black;
+.demo .testimonial-content .pic img {
+  width: 100px;
+  height: auto;
 }
 
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0 0 0 45px;
+.demo .testimonial-content .title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  margin: 0 0 5px 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #d3af71;
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: #26231d;
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #cda45e;
+@media only screen and (max-width: 650px) and (min-width: 400px) {
+  .testimonial:before {
+    border-right: 325px solid transparent;
+  }
+  .testimonial:after {
+    border-left: 325px solid transparent;
+  }
 }
 
 .error {
@@ -1626,7 +1852,7 @@ footer .copyright p {
   width: 100%;
 }
 
-.error .text__error__number {
+.error .text__error .text__number {
   font-size: 1.5rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
@@ -1653,7 +1879,7 @@ footer .copyright p {
 }
 
 @media only screen and (max-width: 800px) {
-  .sectionFooter {
+  .footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1818,6 +2044,7 @@ footer .copyright p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: .8em auto;
 }
 
 .products__btn a, .products__btn header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__btn .compras {
@@ -1832,6 +2059,7 @@ footer .copyright p {
 }
 
 .products__btn a span, .products__btn header .menu--large .content__logo .registro ul li .compras span, header .menu--large .content__logo .registro ul li .products__btn .compras span {
+  font-size: .9rem;
   position: relative;
   z-index: 3;
 }
@@ -1866,6 +2094,27 @@ footer .copyright p {
 
 .products__btn a:hover::before, .products__btn header .menu--large .content__logo .registro ul li .compras:hover::before, header .menu--large .content__logo .registro ul li .products__btn .compras:hover::before {
   transform: scaleY(0);
+}
+
+/* CONTACTO */
+.btn__form {
+  display: inline-block;
+  background-color: #B28604;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: .7em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  max-width: 100px;
+  margin: 1em;
+  transition: .4s;
+}
+
+.btn__form:hover {
+  background: white;
+  color: #B28604;
+  border: 1px solid #B28604;
 }
 
 /* CARRITO DE COMPRAS */
@@ -1952,11 +2201,11 @@ footer .copyright p {
 .products__faq {
   background-color: white;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   margin: 4em 5em;
+  padding: 1.5em 3em;
 }
 
 .products__faq .faq {
@@ -2007,6 +2256,12 @@ footer .copyright p {
   right: -50px;
   height: 80%;
   width: 1px;
+}
+
+@media only screen and (max-width: 700px) {
+  .products__faq {
+    flex-flow: column;
+  }
 }
 
 .divisor {
@@ -2080,7 +2335,6 @@ footer .copyright p {
 }
 
 #whatsapp {
-  cursor: pointer;
   width: 5%;
   height: 7%;
   position: fixed;

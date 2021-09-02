@@ -103,64 +103,95 @@
     <!-- WHATSAPP ICON -->
     <span class="iconify whatsapp" data-icon="logos:whatsapp" data-inline="false" id="whatsapp"></span>
 
-    <h2>Contactate con nosotros</h2>
-
     <section class="contact">
+        <h2>Contactate con nosotros</h2>
+
         <p class="contact__text">¿Tenés alguna duda? Dejanosla a continuación y nos pondremos en contacto a la brevedad. </p>
 
-        <!-- ACA EMPIEZA EL FORM -->
-        <form action="#" class="contact__form">
-            <label for="nombre" class="form__label">Nombre:</label>
-            <input type="text" class="form__input" placeholder="Ingresá tu nombre" id="nombre">
+        <!-- FORM -->
+        <div class="contact__container">
+            <form action="#" class="contact__form">
+                <label for="nombre" class="form__label">Nombre:</label>
+                <input type="text" class="form__input" placeholder="Ingresá tu nombre" id="nombre">
 
-            <label for="mail" class="form__label">Mail:</label> 
-            <input type="email" class="form__input" name="" id="mail" placeholder="usuario@ejemplo.com">
-            <div class="form__flex">
-                <label for="viejocliente" class="form__label">Ya soy cliente</label>
-                <input type="radio" id="viejocliente" name="cliente">
+                <label for="mail" class="form__label">Mail:</label> 
+                <input type="email" class="form__input" name="" id="mail" placeholder="usuario@ejemplo.com">
+                <div class="form__flex">
+                    <label for="viejocliente" class="form__label">Ya soy cliente</label>
+                    <input type="radio" id="viejocliente" name="cliente">
 
-                <label for="nuevocliente" class="form__label">Nuevo cliente</label>
-                <input type="radio" class="form__input" id="nuevocliente" name="cliente">
+                    <label for="nuevocliente" class="form__label">Nuevo cliente</label>
+                    <input type="radio" class="form__input" id="nuevocliente" name="cliente">
+                </div>
+
+                <label for="consulta" class="form__label">Consulta:</label> 
+                <textarea name="consulta" class="form__input" id="consulta" cols="40" rows="10" placeholder="Escribinos acá tu consulta"></textarea>
+                
+                <div class="form__flex">
+                    <label for="newsletter" class="form__label" hidden>Newsletter</label>
+                    <input type="checkbox" class="form__input" id="newsletter"> Recibir nuestro Newsletter
+                </div>
+
+                <input type="submit" name="" id="submit" class="btn btn__form">
+            </form>
+            <div class="contact__info">
+                <div class="contact__box">
+                    <div class="box">
+                        <div class="contact__icon"><span class="iconify contact__icon--gps" data-icon="el:map-marker-alt"></span></div>
+                        <div class="contact__text">
+                            <span>Ubicación</span>
+                            <p>Av. Tamborini 5400 <br> Villa Urquiza <br> CABA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__box">
+                    <div class="box">
+                        <div class="contact__icon"><span class="iconify contact__icon--phone" data-icon="el:phone-alt"></span></div>
+                        <div class="contact__text">
+                            <span>Teléfono</span>
+                            <p>+54 11 3543-3453</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__box">
+                    <div class="box">
+                        <div class="contact__icon"><span class="iconify contact__icon--mail" data-icon="entypo:mail"></span></div>
+                        <div class="contact__text">
+                            <span>Mail</span>
+                            <p>contacto@olimpadesign.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <label for="consulta" class="form__label">Consulta:</label> 
-            <textarea name="" class="form__input" id="consulta" cols="40" rows="10" placeholder="Escribinos acá tu consulta"></textarea>
-            
-            <div class="form__flex">
-                <label for="newsletter" class="form__label" hidden>Newsletter</label>
-                <input type="checkbox" class="form__input" id="newsletter"> Recibir nuestro Newsletter
-            </div>
-
-            <input type="submit" name="" id="submit" class="btn btn__form">
-        </form>
-    </section>
+        </div>
 
     <!-- FAQ -->
-    <div class="productos__faq info">
-        <div class="faq info__container">
-            <span class="iconify faq__icon info__icon" data-icon="ic:baseline-published-with-changes" data-inline="false"></span>
-            <h3>
-                Cambios y devoluciones
-            </h3>
-            <p> Conocé sobre nuestro botón de arrepentimiento</p>
-        </div>
+        <div class="products__faq">
+            <div class="faq info__container">
+                <span class="iconify faq__icon faq__icon--dev" data-icon="ic:baseline-published-with-changes" data-inline="false"></span>
+                <h3>
+                    Cambios y devoluciones
+                </h3>
+                <p> Conocé sobre nuestro botón de arrepentimiento</p>
+            </div>
 
-        <div class="faq">
-            <span class="iconify faq__icon info__icon" data-icon="mdi:truck-fast-outline" data-inline="false"></span>
-            <h3>
-                Envíos a todo el país
-            </h3>
-            <p>Consultá tiempos y costos</p>
-        </div>
+            <div class="faq">
+                <span class="iconify faq__icon faq__icon--ship" data-icon="mdi:truck-fast-outline" data-inline="false"></span>
+                <h3>
+                    Envíos a todo el país
+                </h3>
+                <p>Consultá tiempos y costos</p>
+            </div>
 
-        <div class="faq">
-            <span class="iconify faq__icon info__icon" data-icon="carbon:chat-bot" data-inline="false"></span>
-            <h3>
-                Asesorate
-            </h3>
-            <p>Te ayudamos a crear el espacio ideal para vos</p>
+            <div class="faq">
+                <span class="iconify faq__icon faq__icon--help" data-icon="carbon:chat-bot" data-inline="false"></span>
+                <h3>
+                    Asesorate
+                </h3>
+                <p>Te ayudamos a crear el espacio ideal para vos</p>
+            </div>
         </div>
-    </div>
+    </section>
 </main>
 
 <footer>
@@ -172,7 +203,7 @@
                 <button type="input" class="form__btn">Suscribirme</button>
             </div>
             <div class="arrepentimiento">
-                <li><a href="#">Botón de arrepentimiento</a></li>
+                <li><a href="404.html">Botón de arrepentimiento</a></li>
             </div>
         </div>
         
@@ -206,7 +237,7 @@
                 <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="diseno.html">Crea un diseño</a></li>
                 <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="sobrenosotros.html">Nosotros</a></li>
                 <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="contacto.html">Contacto</a></li>
-                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="#">Ayuda</a></li>
+                <li><span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="404.html">Ayuda</a></li>
             </ul>
         </div>
     </section>
@@ -219,7 +250,7 @@
     </div>
     
     <div class="copyright">
-        <p> Copyright &copy; 2021 </p>
+        <p>Copyright &copy; 2021</p>
     </div>
 </footer>
 
