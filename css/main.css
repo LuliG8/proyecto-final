@@ -150,7 +150,7 @@ header .menu--large .menu__pages a:before, header .menu--large .menu__pages .con
   background-color: #18d26e;
   visibility: hidden;
   width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in 0s;
 }
 
 header .menu--large .menu__pages a:hover, header .menu--large .menu__pages .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .menu__pages .compras:hover {
@@ -204,6 +204,176 @@ header .menu--large .menu__pages .buscador .btn__forms .icon__search {
 
 header .menu--small {
   display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: .3em .5em;
+}
+
+header .menu__list--sm {
+  display: flex;
+  width: 90vw;
+  flex-flow: row nowrap;
+  gap: .8em;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header .menu__list--sm .hamburger__menu {
+  z-index: 1;
+  /* HAMBURGER MENU ROTA A CRUZ */
+  /* APARECE EL MENU */
+}
+
+header .menu__list--sm .hamburger__menu .toggler {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+header .menu__list--sm .hamburger__menu .hamburger {
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .menu__list--sm .hamburger__menu .hamburger div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #4F4141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+header .menu__list--sm .hamburger__menu .hamburger div::before, header .menu__list--sm .hamburger__menu .hamburger div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: #4F4141;
+}
+
+header .menu__list--sm .hamburger__menu .hamburger div::after {
+  top: 10px;
+}
+
+header .menu__list--sm .hamburger__menu .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .menu__list--sm .hamburger__menu .menu div {
+  background: black;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+header .menu__list--sm .hamburger__menu .menu div div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+header .menu__list--sm .hamburger__menu .menu div ul li {
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  color: #F3D848;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+header .menu__list--sm .hamburger__menu .menu div ul li a, header .menu__list--sm .hamburger__menu .menu div .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro .menu__list--sm .hamburger__menu .menu div ul li .compras {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+header .menu__list--sm .hamburger__menu .toggler:checked + .hamburger div {
+  transform: rotate(135deg);
+}
+
+header .menu__list--sm .hamburger__menu .toggler:checked + .hamburger div:before, header .menu__list--sm .hamburger__menu .toggler:checked + .hamburger div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+header .menu__list--sm .hamburger__menu .toggler:checked:hover + .hamburger div {
+  transform: rotate(225deg);
+}
+
+header .menu__list--sm .hamburger__menu .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+header .menu__list--sm .hamburger__menu .toggler:checked ~ .menu div {
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+header .menu__list--sm .hamburger__menu .toggler:checked ~ .menu div div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+header .menu__list--sm .icon__search--ms {
+  justify-self: flex-end;
+  width: 1.5em;
+  height: 1.5em;
+  color: #B28604;
+}
+
+header .menu__list--sm .icon__cart {
+  justify-self: flex-end;
+  width: 2em;
+  height: 2em;
+  color: #D8BCA8;
+}
+
+header .menu__list--sm .hamburguer__icon {
+  color: #4F4141;
+}
+
+header .menu__list--sm .menu__icons--end {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+header .menu__list--sm .logo {
+  width: 8em;
+  padding-top: .7em;
 }
 
 /* FOOTER */
@@ -881,8 +1051,10 @@ footer .copyright p {
   color: black;
   line-height: 1.5em;
   max-width: 60vw;
+  font-family: "Raleway", sans-serif;
   font-size: .9rem;
   text-align: start;
+  letter-spacing: .06em;
 }
 
 /* CATEGORÍAS */
@@ -1568,7 +1740,6 @@ footer .copyright p {
   padding: 2em;
   min-width: 40%;
   background-color: white;
-  border-radius: 1em 1em 0 0;
 }
 
 .contact .contact__container .contact__form .form__label {
@@ -1649,7 +1820,7 @@ footer .copyright p {
 }
 
 .contact .contact__container .contact__info .contact__box .box .contact__text p {
-  font-size: .9rem;
+  font-size: 1vw;
   text-align: start;
   line-height: 1.5em;
   min-width: 80%;
@@ -1676,22 +1847,22 @@ footer .copyright p {
   }
 }
 
-@media only screen and (max-width: 530px) {
-  .contact__info {
-    display: none;
-  }
-}
-
 /* LISTA */
-.unordered__list {
+.list {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   align-items: center;
   gap: .4em;
   margin: 1.5rem 0;
 }
 
-.unordered__list li {
+.list .list__card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.list .list__card .list__number {
   font-family: "Raleway", sans-serif;
 }
 
@@ -1752,6 +1923,21 @@ footer .copyright p {
 
 .container__gallery .gallery__img img {
   width: 100%;
+}
+
+/* GALERIA */
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #454035;
+  border-bottom: 3px solid #454035;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
 }
 
 /* OPINIONES */
@@ -2204,7 +2390,7 @@ footer .copyright p {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin: 4em 5em;
+  margin: 4em 10em;
   padding: 1.5em 3em;
 }
 
@@ -2361,32 +2547,11 @@ footer .copyright p {
 }
 
 @media only screen and (max-width: 700px) {
-  .heroInner {
-    text-align: center;
-    max-width: 80vw;
+  /* GENERAL STYLES */
+  h2 {
+    font-size: 1.2em;
   }
-  h1 {
-    color: #B28604;
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
-  .hero p {
-    font-size: .7rem;
-    font-weight: lighter;
-    color: black;
-    padding: 1em;
-    margin-bottom: 1.6em;
-  }
-  .heroInner .btn {
-    max-width: 10em;
-    margin-top: 2em;
-    padding: .8em;
-    color: white;
-    background-color: #F3D848;
-    font-size: 1rem;
-    border-radius: .4em;
-    text-transform: uppercase;
-  }
+  /* METODOS DE PAGO */
   .methods {
     display: flex;
     flex-flow: column;
@@ -2406,14 +2571,16 @@ footer .copyright p {
   .methods__content img {
     max-width: 100px;
   }
+  /* SUSCRIPCION */
   .subscription {
     display: flex;
     flex-direction: row wrap;
     background-color: #DADADA;
     text-align: right;
-    margin: 2em 0;
+    margin-bottom: 5em;
     padding: 2em 0;
     background: url("../images/suscribe.jpg") no-repeat center/cover;
+    filter: grayscale(70%);
   }
   .subscription__img {
     display: none;
@@ -2443,6 +2610,7 @@ footer .copyright p {
   .subscription__form {
     display: flex;
   }
+  /* INFO - FAQ */
   .info {
     display: flex;
     flex-direction: column;
@@ -2456,12 +2624,17 @@ footer .copyright p {
     width: 1.5em;
     height: 1.5em;
   }
+  .info__container--border::before, .info__container::after {
+    display: none;
+    background: white;
+  }
 }
 
 @media only screen and (max-width: 880px) {
   h3 {
     font-size: .8rem;
   }
+  /* MENU LARGE */
   .menu--large {
     display: none;
   }
@@ -2471,52 +2644,20 @@ footer .copyright p {
   }
   header .menu--small {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: .3em .5em;
   }
-  header .menu--small .menu__list--sm {
-    display: flex;
-    width: 90vw;
-    flex-flow: row nowrap;
-    gap: .8em;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  header .menu--small .menu__list--sm .icon__search--ms {
-    justify-self: flex-end;
-    width: 1.5em;
-    height: 1.5em;
-    color: #B28604;
-  }
-  header .menu--small .menu__list--sm .icon__cart {
-    justify-self: flex-end;
-    width: 2em;
-    height: 2em;
-    color: #D8BCA8;
-  }
-  header .menu--small .menu__list--sm .menu__hamburguer {
-    color: #4F4141;
-  }
-  header .menu--small .menu__list--sm .logo {
-    width: 6em;
-  }
-  header .menu--small .menu__list--sm .menu__icons--end {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    gap: 1em;
-  }
+  /* MENU SMALL */
   .hero--sm {
     display: block;
   }
+  /* ARMA TU DISENO - HOME SECTION */
   .diseno__content {
     height: auto;
   }
+  /* CATEGORIAS - HOME SECTION */
   .categories {
     grid-template-columns: 1fr;
     grid-template-rows: 250px 250px 250px 250px;
-    margin: 1% 0;
+    margin-top: 5em;
   }
   .categories .card__category {
     height: 250px;
@@ -2535,5 +2676,8 @@ footer .copyright p {
     opacity: 1;
     visibility: visible;
     top: 0px;
+  }
+  .banner__instagram {
+    height: 100px;
   }
 }
