@@ -1,3 +1,4 @@
+/* MODAL */
 (function() {
 "use strict";
 

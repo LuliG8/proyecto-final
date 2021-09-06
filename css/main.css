@@ -6,128 +6,84 @@
 header {
   position: sticky;
   top: 0;
-  background-color: white;
-  box-shadow: 0px 0.5px 6px 0 #4F4141;
-  z-index: 20;
+  background: rgba(255, 255, 255, 0.774);
+  box-shadow: -3px 25px 17px -26px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: -3px 25px 17px -26px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -3px 25px 17px -26px rgba(0, 0, 0, 0.51);
+  z-index: 100;
+  transition: all 0.5s;
+  /* MENU SMALL */
+}
+
+header .nav {
+  display: inline-block;
+  width: 100%;
 }
 
 header .menu--large {
-  width: 100vw;
-  /* Registro, carrito de compras y Logo */
-  /* Secciones depágina */
-}
-
-header .menu--large .content__logo {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-  margin: 0em 4em;
-}
-
-header .menu--large .content__logo .logo {
-  width: 10em;
-  padding: .7em;
-}
-
-header .menu--large .content__logo .registro ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-header .menu--large .content__logo .registro ul a, header .menu--large .content__logo .registro ul li .compras {
-  color: black;
-  font-size: .9em;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-}
-
-header .menu--large .content__logo .registro ul li {
-  padding-left: 1em;
-  font-size: 0.8em;
-}
-
-header .menu--large .content__logo .registro ul li .icon__cart {
-  color: white;
-  width: 30px;
-  height: 30px;
-}
-
-header .menu--large .content__logo .registro ul li .compras {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #D8BCA8;
-  border-radius: 2em;
-  margin-left: .5em;
-  padding: .3em 1em;
-  gap: .4em;
-  position: relative;
-}
-
-header .menu--large .content__logo .registro ul li .badge {
-  display: inline-block;
-  padding: .35em .65em;
-  font-size: .75em;
-  font-weight: 700;
-  line-height: 1;
-  color: white;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25rem;
-}
-
-header .menu--large .content__logo .registro ul li .badge__cart {
-  background-color: #B28604;
-  border: 2.2px solid white;
-  position: absolute;
-  top: -3px;
-  right: -10px;
-}
-
-header .menu--large .content__logo .registro ul li .compras:hover {
-  border: 0.5px solid #B28604;
-}
-
-header .menu--large .content__logo .registro ul li .cuenta:hover {
-  color: #B28604;
+  /* PAGES SECTION */
 }
 
 header .menu--large .menu__pages {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border-top: 3px solid #D8BCA8;
-  border-bottom: 5px solid #D8BCA8;
+  border-bottom: 2px solid #D8BCA8;
+}
+
+header .menu--large .menu__pages .logo {
+  justify-self: flex-start;
+  margin-left: 3em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+header .menu--large .menu__pages #logo {
+  width: 9em;
 }
 
 header .menu--large .menu__pages ul {
   display: flex;
-  width: 100vw;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 1%;
-  padding-left: 10em;
   margin-bottom: 0;
+  gap: 2em;
 }
 
 header .menu--large .menu__pages li {
   text-align: center;
-  padding: 0 2em;
+  width: auto;
 }
 
-header .menu--large .menu__pages a, header .menu--large .menu__pages .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .menu__pages .compras {
-  font-size: .8rem;
+header .menu--large .menu__pages li .submenu__pages {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  min-height: 40px;
+  z-index: 10;
+}
+
+header .menu--large .menu__pages li .submenu__pages a, header .menu--large .menu__pages .register__container .registro ul li .submenu__pages .compras, .register__container .registro ul header .menu--large .menu__pages li .submenu__pages .compras {
+  color: #4F4141;
+  font-size: .8em;
+}
+
+header .menu--large .menu__pages li .arrow {
+  padding-bottom: .3em;
+}
+
+header .menu--large .menu__pages a, header .menu--large .menu__pages .register__container .registro ul li .compras, .register__container .registro ul li header .menu--large .menu__pages .compras {
+  font-size: 1vw;
   color: #4F4141;
 }
 
-header .menu--large .menu__pages a:focus, header .menu--large .menu__pages .content__logo .registro ul li .compras:focus, header .menu--large .content__logo .registro ul li .menu__pages .compras:focus {
+header .menu--large .menu__pages a:focus, header .menu--large .menu__pages .register__container .registro ul li .compras:focus, .register__container .registro ul li header .menu--large .menu__pages .compras:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,61 +95,55 @@ header .menu--large .menu__pages a:focus, header .menu--large .menu__pages .cont
   transition: 0.3s;
 }
 
-header .menu--large .menu__pages a:before, header .menu--large .menu__pages .content__logo .registro ul li .compras:before, header .menu--large .content__logo .registro ul li .menu__pages .compras:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #18d26e;
-  visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in 0s;
-}
-
-header .menu--large .menu__pages a:hover, header .menu--large .menu__pages .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .menu__pages .compras:hover {
-  color: #B28604;
+header .menu--large .menu__pages a:hover, header .menu--large .menu__pages .register__container .registro ul li .compras:hover, .register__container .registro ul li header .menu--large .menu__pages .compras:hover {
+  border-bottom: 1px solid #B28604;
 }
 
 header .menu--large .menu__pages .menu__pages--active {
-  color: #B28604;
+  color: #4F4141;
   font-weight: 600;
-  border-bottom: 0px solid #ffffff;
+  border-bottom: 1px solid #B28604;
 }
 
 header .menu--large .menu__pages .buscador {
   display: flex;
   flex-direction: row;
   justify-self: flex-end;
-}
-
-header .menu--large .menu__pages .buscador input {
-  /* width: 100%; */
-  border: none;
-  border-bottom: 0.1em solid #B28604;
-  overflow: hidden;
-  padding: .3em .5em;
-  outline: none;
-}
-
-header .menu--large .menu__pages .buscador .btn__forms {
-  width: 60px;
-  color: white;
-  border: none;
-  border-bottom: 0.1em solid #B28604;
-  outline: none;
-  cursor: pointer;
+  height: 20px;
   margin-right: 3em;
 }
 
+header .menu--large .menu__pages .buscador input {
+  font-size: .7vw;
+  border: none;
+  background: transparent;
+  border-bottom: 0.2em solid #B2AA0D;
+  overflow: hidden;
+  padding: .3em 0;
+  outline: none;
+  text-transform: uppercase;
+}
+
+header .menu--large .menu__pages .buscador .btn__forms {
+  width: 40px;
+  color: white;
+  border: none;
+  border-bottom: 0.1em solid #B2AA0D;
+  outline: none;
+  cursor: pointer;
+}
+
 header .menu--large .menu__pages .buscador .btn__forms .icon__search {
-  color: #B28604;
-  font-size: 1.3em;
+  position: absolute;
+  color: #B2AA0D;
+  font-size: 1.1rem;
   font-weight: 800;
-  left: 2em;
-  top: 2em;
+  bottom: 45%;
   text-align: center;
+}
+
+header .menu--large .submenu__pages {
+  display: block;
 }
 
 header .menu--small {
@@ -307,7 +257,7 @@ header .menu__list--sm .hamburger__menu .menu div ul li {
   letter-spacing: .06em;
 }
 
-header .menu__list--sm .hamburger__menu .menu div ul li a, header .menu__list--sm .hamburger__menu .menu div .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro .menu__list--sm .hamburger__menu .menu div ul li .compras {
+header .menu__list--sm .hamburger__menu .menu div ul li a, header .menu__list--sm .hamburger__menu .menu div .register__container .registro ul li .compras, .register__container .registro header .menu__list--sm .hamburger__menu .menu div ul li .compras {
   color: inherit;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -363,11 +313,94 @@ header .menu__list--sm .menu__icons--end {
   flex-flow: row;
   justify-content: center;
   gap: 1em;
+  padding-left: 0;
 }
 
 header .menu__list--sm .logo {
   width: 8em;
   padding-top: .7em;
+}
+
+.register__container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin: 1em 4em 0;
+}
+
+.register__container .logo {
+  width: 10em;
+  padding: .7em;
+}
+
+.register__container .registro ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.register__container .registro ul li {
+  padding-left: 1em;
+  font-size: 0.8em;
+}
+
+.register__container .registro ul li a, .register__container .registro ul li .compras {
+  color: black;
+  font-size: .8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  transition: .4s;
+}
+
+.register__container .registro ul li .compras {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #D8BCA8;
+  border-radius: 1.2em;
+  padding: .7em;
+  gap: .4em;
+  position: relative;
+  transition: .7s;
+}
+
+.register__container .registro ul li .compras .icon__cart {
+  color: white;
+  width: 25px;
+  height: 25px;
+}
+
+.register__container .registro ul li .badge {
+  display: inline-block;
+  padding: .35em .65em;
+  font-size: .75em;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+
+.register__container .registro ul li .badge__cart {
+  background-color: #B28604;
+  border: 2.2px solid white;
+  position: absolute;
+  top: -3px;
+  right: -10px;
+}
+
+.register__container .registro ul li .compras:hover {
+  background-color: #F3D848;
+}
+
+.register__container .registro ul li .cuenta:hover {
+  color: #B28604;
 }
 
 /* FOOTER */
@@ -384,12 +417,12 @@ footer h3 {
   margin-bottom: .6em;
 }
 
-footer a, footer header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li footer .compras {
+footer a, footer .register__container .registro ul li .compras, .register__container .registro ul li footer .compras {
   color: white;
   font-size: .7rem;
 }
 
-footer a:hover, footer header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li footer .compras:hover {
+footer a:hover, footer .register__container .registro ul li .compras:hover, .register__container .registro ul li footer .compras:hover {
   color: #F3D848;
 }
 
@@ -448,7 +481,7 @@ footer .footer .redes ul li {
   margin: 0 .2em;
 }
 
-footer .footer .redes ul li a, footer .footer .redes header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro footer .footer .redes ul li .compras {
+footer .footer .redes ul li a, footer .footer .redes .register__container .registro ul li .compras, .register__container .registro footer .footer .redes ul li .compras {
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
@@ -461,21 +494,21 @@ footer .footer .redes ul li a, footer .footer .redes header .menu--large .conten
   transition: ease-in-out 0.4s;
 }
 
-footer .footer .redes ul li a .redes__icon--fb, footer .footer .redes header .menu--large .content__logo .registro ul li .compras .redes__icon--fb, header .menu--large .content__logo .registro footer .footer .redes ul li .compras .redes__icon--fb {
+footer .footer .redes ul li a .redes__icon--fb, footer .footer .redes .register__container .registro ul li .compras .redes__icon--fb, .register__container .registro footer .footer .redes ul li .compras .redes__icon--fb {
   font-size: 1.1em;
   border-radius: .4em;
   overflow: hidden;
 }
 
-footer .footer .redes ul li a .redes__icon--ig, footer .footer .redes header .menu--large .content__logo .registro ul li .compras .redes__icon--ig, header .menu--large .content__logo .registro footer .footer .redes ul li .compras .redes__icon--ig {
+footer .footer .redes ul li a .redes__icon--ig, footer .footer .redes .register__container .registro ul li .compras .redes__icon--ig, .register__container .registro footer .footer .redes ul li .compras .redes__icon--ig {
   width: 1.27em;
 }
 
-footer .footer .redes ul li a .redes__icon--pn, footer .footer .redes header .menu--large .content__logo .registro ul li .compras .redes__icon--pn, header .menu--large .content__logo .registro footer .footer .redes ul li .compras .redes__icon--pn {
+footer .footer .redes ul li a .redes__icon--pn, footer .footer .redes .register__container .registro ul li .compras .redes__icon--pn, .register__container .registro footer .footer .redes ul li .compras .redes__icon--pn {
   border-radius: .2em;
 }
 
-footer .footer .redes ul li a:hover, footer .footer .redes header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro footer .footer .redes ul li .compras:hover {
+footer .footer .redes ul li a:hover, footer .footer .redes .register__container .registro ul li .compras:hover, .register__container .registro footer .footer .redes ul li .compras:hover {
   background-color: #F3D848;
 }
 
@@ -504,7 +537,7 @@ footer .footer .footer__subscription .footer__form input {
   font-family: "Lato", sans-serif;
 }
 
-footer .footer .footer__subscription .arrepentimiento a, footer .footer .footer__subscription .arrepentimiento header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li footer .footer .footer__subscription .arrepentimiento .compras {
+footer .footer .footer__subscription .arrepentimiento a, footer .footer .footer__subscription .arrepentimiento .register__container .registro ul li .compras, .register__container .registro ul li footer .footer .footer__subscription .arrepentimiento .compras {
   font-size: .8rem;
   color: #F3D848;
   border: 1px solid #F3D848;
@@ -514,12 +547,12 @@ footer .footer .footer__subscription .arrepentimiento a, footer .footer .footer_
   transition: .3s;
 }
 
-footer .footer .footer__subscription .arrepentimiento a:hover, footer .footer .footer__subscription .arrepentimiento header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li footer .footer .footer__subscription .arrepentimiento .compras:hover {
+footer .footer .footer__subscription .arrepentimiento a:hover, footer .footer .footer__subscription .arrepentimiento .register__container .registro ul li .compras:hover, .register__container .registro ul li footer .footer .footer__subscription .arrepentimiento .compras:hover {
   color: whitesmoke;
   border: 1px solid whitesmoke;
 }
 
-footer .footer .mapa__list a, footer .footer .mapa__list header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li footer .footer .mapa__list .compras {
+footer .footer .mapa__list a, footer .footer .mapa__list .register__container .registro ul li .compras, .register__container .registro ul li footer .footer .mapa__list .compras {
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -598,43 +631,187 @@ footer .copyright p {
   }
 }
 
-/* HERO SECTION */
-.carousel {
-  height: 90vh;
-}
-
-.carousel-item {
-  height: 90vh;
-}
-
-.carousel img {
+/* CAROUSEL */
+#slider {
   overflow: hidden;
 }
 
-.carousel #cr2 {
-  color: white;
+#slider .carousel-indicators {
+  top: 100%;
+  transform: translateY(-100%);
 }
 
-.carousel .hero__img1 {
-  margin-top: -200px;
+#slider .figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: -0%;
+  animation: 20s slider infinite;
 }
 
-.carousel .hero__img2 {
-  margin-top: -200px;
+#slider .figure #carousel1 {
+  width: 20%;
+  float: left;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../../images/carousel/carousel1.jpg) no-repeat center/cover;
 }
 
-.carousel .hero__img3 {
-  margin-top: -300px;
+#slider .figure #carousel1 h1 {
+  font-size: 2.8vw;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  color: whitesmoke;
+  position: absolute;
+  top: 38%;
+  left: 41%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 80%;
 }
 
-.carousel-caption {
-  top: 10em;
+#slider .figure #carousel1 p {
+  color: whitesmoke;
+  position: absolute;
+  top: 25%;
+  left: 41%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 80%;
+  font-size: .9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-decoration: underline;
+  text-underline-offset: .3em;
 }
 
-.carousel-indicators {
-  z-index: 10;
+#slider .figure #carousel1 a, #slider .figure #carousel1 .register__container .registro ul li .compras, .register__container .registro ul li #slider .figure #carousel1 .compras {
+  position: absolute;
+  top: 73%;
+  left: 9.7%;
+  transform: translateY(-50%) translateX(-50%);
+  margin-left: 1em;
+  border-radius: .4em;
+  text-shadow: 1px 1px 4px #000;
+  line-height: 3.5em;
+  width: 10em;
+  height: 6em;
 }
 
+#slider .figure #carousel2 {
+  width: 20%;
+  float: left;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../images/carousel/carousel2.jpg) no-repeat center/cover;
+}
+
+#slider .figure #carousel2 h1 {
+  font-size: 2.8vw;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  color: whitesmoke;
+  position: absolute;
+  top: 38%;
+  left: 61%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 80%;
+}
+
+#slider .figure #carousel2 p {
+  color: whitesmoke;
+  position: absolute;
+  top: 25%;
+  left: 61%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 80%;
+  font-size: .9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+
+#slider .figure #carousel2 a, #slider .figure #carousel2 .register__container .registro ul li .compras, .register__container .registro ul li #slider .figure #carousel2 .compras {
+  position: absolute;
+  top: 73%;
+  left: 29.7%;
+  transform: translateY(-50%) translateX(-50%);
+  margin-left: 1em;
+  border-radius: .4em;
+  text-shadow: 1px 1px 4px #000;
+  line-height: 3.5em;
+  width: 12em;
+  height: 6em;
+}
+
+#slider .figure #carousel3 {
+  width: 20%;
+  float: left;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../images/carousel/carousel3.jpg) no-repeat center/cover;
+}
+
+#slider .figure #carousel3 h1 {
+  font-size: 2.8vw;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  color: whitesmoke;
+  position: absolute;
+  top: 38%;
+  left: 81%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 80%;
+}
+
+#slider .figure #carousel3 p {
+  color: whitesmoke;
+  position: absolute;
+  top: 25%;
+  left: 81%;
+  transform: translateY(-50%) translateX(-50%);
+  min-width: 80%;
+  font-size: .9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+
+#slider .figure #carousel3 a, #slider .figure #carousel3 .register__container .registro ul li .compras, .register__container .registro ul li #slider .figure #carousel3 .compras {
+  position: absolute;
+  top: 73%;
+  left: 49.7%;
+  transform: translateY(-50%) translateX(-50%);
+  margin-left: 1em;
+  border-radius: .4em;
+  text-shadow: 1px 1px 4px #000;
+  line-height: 3.5em;
+  width: 10em;
+  height: 6em;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+}
+
+/* HERO SMALL */
 .hero--sm {
   position: relative;
   height: 60vh;
@@ -669,7 +846,7 @@ footer .copyright p {
   text-underline-offset: .3em;
 }
 
-.hero--sm a, .hero--sm header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .hero--sm .compras {
+.hero--sm a, .hero--sm .register__container .registro ul li .compras, .register__container .registro ul li .hero--sm .compras {
   position: absolute;
   top: 73%;
   left: 23%;
@@ -747,38 +924,38 @@ footer .copyright p {
 }
 
 /* CARROUSEL ESTILOS */
-.carousel__estilos {
+.estilos {
+  background: whitesmoke;
+}
+
+.estilos h2 {
   position: relative;
+}
+
+.estilos h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 70%;
+  height: 2px;
+  background: #B28604;
+  bottom: 10;
+  left: 0;
+}
+
+.estilos i {
+  visibility: hidden;
+}
+
+.carousel__estilos {
   width: 100vw;
   display: flex;
+  flex-flow: row;
   justify-content: space-evenly;
-  padding: 1.5em 2%;
-  background: whitesmoke;
+  padding: 3.5em 2%;
   /* SLIDERS */
   /* CAROUSEL IMAGENES */
   /* CAROUSEL TEXTOS */
-}
-
-.carousel__estilos .slider {
-  color: whitesmoke;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 1em;
-  display: block;
-  width: 20px;
-  height: 25px;
-  color: #4F4141;
-  font-weight: 900;
-  text-align: center;
-}
-
-.carousel__estilos .slider__left {
-  left: 50px;
-}
-
-.carousel__estilos .slider__right {
-  right: -50px;
 }
 
 .carousel__estilos .content {
@@ -787,10 +964,6 @@ footer .copyright p {
   justify-content: center;
   gap: 1.6em;
   animation: appear 500ms ease-in-out 0.3s both;
-}
-
-.carousel__estilos #content2 {
-  display: none;
 }
 
 .carousel__estilos .carousel__img {
@@ -855,23 +1028,6 @@ footer .copyright p {
   font-weight: 800;
 }
 
-.carousel__estilos #content:target {
-  display: flex;
-}
-
-.carousel__estilos #content:target + #content2 {
-  display: flex;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /* VER TODO */
 .header {
   display: flex;
@@ -904,7 +1060,7 @@ footer .copyright p {
   margin: 1em 5.5em -1.5em 0;
 }
 
-.header .more a, .header .more header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .header .more .compras {
+.header .more a, .header .more .register__container .registro ul li .compras, .register__container .registro ul li .header .more .compras {
   font-family: "Raleway", sans-serif;
   display: inline-block;
   color: #4F4141;
@@ -960,7 +1116,7 @@ footer .copyright p {
   text-align: center;
 }
 
-.products .products__gallery .gallery__prod .card__img .social a, .products .products__gallery .gallery__prod .card__img .social header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products .products__gallery .gallery__prod .card__img .social .compras {
+.products .products__gallery .gallery__prod .card__img .social a, .products .products__gallery .gallery__prod .card__img .social .register__container .registro ul li .compras, .register__container .registro ul li .products .products__gallery .gallery__prod .card__img .social .compras {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -974,7 +1130,7 @@ footer .copyright p {
   transition: ease-in-out 0.3s;
 }
 
-.products .products__gallery .gallery__prod .card__img .social a:hover, .products .products__gallery .gallery__prod .card__img .social header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .products .products__gallery .gallery__prod .card__img .social .compras:hover {
+.products .products__gallery .gallery__prod .card__img .social a:hover, .products .products__gallery .gallery__prod .card__img .social .register__container .registro ul li .compras:hover, .register__container .registro ul li .products .products__gallery .gallery__prod .card__img .social .compras:hover {
   color: #151515;
   background: #F3D848;
 }
@@ -1279,7 +1435,7 @@ footer .copyright p {
   padding: 1em 0;
 }
 
-.products__menu .products__menu--category .products__menu--item a, .products__menu .products__menu--category .products__menu--item header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__menu .products__menu--category .products__menu--item .compras {
+.products__menu .products__menu--category .products__menu--item a, .products__menu .products__menu--category .products__menu--item .register__container .registro ul li .compras, .register__container .registro ul li .products__menu .products__menu--category .products__menu--item .compras {
   text-decoration: none;
   color: #FFCB00;
   font-size: 1vw;
@@ -1296,12 +1452,12 @@ footer .copyright p {
   z-index: 10;
 }
 
-.products__menu .products__menu--category .products__menu--item .products__submenu a, .products__menu .products__menu--category .products__menu--item .products__submenu header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__menu .products__menu--category .products__menu--item .products__submenu .compras {
+.products__menu .products__menu--category .products__menu--item .products__submenu a, .products__menu .products__menu--category .products__menu--item .products__submenu .register__container .registro ul li .compras, .register__container .registro ul li .products__menu .products__menu--category .products__menu--item .products__submenu .compras {
   color: white;
   font-size: .8em;
 }
 
-.products__menu .products__menu--category .products__menu--item a:hover, .products__menu .products__menu--category .products__menu--item header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .products__menu .products__menu--category .products__menu--item .compras:hover {
+.products__menu .products__menu--category .products__menu--item a:hover, .products__menu .products__menu--category .products__menu--item .register__container .registro ul li .compras:hover, .register__container .registro ul li .products__menu .products__menu--category .products__menu--item .compras:hover {
   color: #FFCB00;
 }
 
@@ -1406,7 +1562,7 @@ footer .copyright p {
   text-align: center;
 }
 
-.products__section .products__card .products__image .icons a, .products__section .products__card .products__image .icons header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__section .products__card .products__image .icons .compras {
+.products__section .products__card .products__image .icons a, .products__section .products__card .products__image .icons .register__container .registro ul li .compras, .register__container .registro ul li .products__section .products__card .products__image .icons .compras {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1420,7 +1576,7 @@ footer .copyright p {
   transition: ease-in-out 0.3s;
 }
 
-.products__section .products__card .products__image .icons a:hover, .products__section .products__card .products__image .icons header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .products__section .products__card .products__image .icons .compras:hover {
+.products__section .products__card .products__image .icons a:hover, .products__section .products__card .products__image .icons .register__container .registro ul li .compras:hover, .register__container .registro ul li .products__section .products__card .products__image .icons .compras:hover {
   color: #151515;
   background: #F3D848;
 }
@@ -1649,7 +1805,7 @@ footer .copyright p {
   filter: hue-rotate(50%);
 }
 
-.container .row div:hover a, .container .row div:hover header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .container .row div:hover .compras {
+.container .row div:hover a, .container .row div:hover .register__container .registro ul li .compras, .register__container .registro ul li .container .row div:hover .compras {
   display: block;
   position: absolute;
   color: white;
@@ -1661,7 +1817,7 @@ footer .copyright p {
   margin-right: .8em;
 }
 
-.container .col-6 a, .container .col-6 header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .container .col-6 .compras {
+.container .col-6 a, .container .col-6 .register__container .registro ul li .compras, .register__container .registro ul li .container .col-6 .compras {
   display: none;
   position: absolute;
   top: 40%;
@@ -1675,7 +1831,7 @@ footer .copyright p {
   margin-right: .8em;
 }
 
-.container .col-2 a, .container .col-2 header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .container .col-2 .compras {
+.container .col-2 a, .container .col-2 .register__container .registro ul li .compras, .register__container .registro ul li .container .col-2 .compras {
   display: none;
   position: absolute;
   top: 45%;
@@ -1689,7 +1845,7 @@ footer .copyright p {
   margin-right: .8em;
 }
 
-.container .col-3 a, .container .col-3 header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .container .col-3 .compras {
+.container .col-3 a, .container .col-3 .register__container .registro ul li .compras, .register__container .registro ul li .container .col-3 .compras {
   display: none;
   position: absolute;
   top: 45%;
@@ -1753,8 +1909,8 @@ footer .copyright p {
   width: 200px;
   height: 2px;
   background: #B28604;
-  top: 70px;
-  left: 600px;
+  left: 47%;
+  transform: translateX(-50%);
 }
 
 .contact .contact__text {
@@ -1860,7 +2016,6 @@ footer .copyright p {
 }
 
 .contact .contact__container .contact__info .contact__box .box .contact__text p {
-  font-size: 1vw;
   text-align: start;
   line-height: 1.5em;
   min-width: 80%;
@@ -2059,7 +2214,6 @@ footer .copyright p {
 .body__error .error {
   height: 100vh;
   display: flex;
-  flex-flow: row-reverse wrap;
   justify-content: space-evenly;
   align-items: center;
   font-family: "Lato", sans-serif;
@@ -2097,16 +2251,16 @@ footer .copyright p {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  border-radius: 1em;
   padding: .8em;
   transition: 0.3s;
+  outline: none;
 }
 
 .body__error .error .text__error .error__btn:hover {
   color: #B2AA0D;
 }
 
-.body__error .error .error__img {
+.body__error .error__img {
   width: 20%;
   display: flex;
   flex-flow: column;
@@ -2114,14 +2268,14 @@ footer .copyright p {
   align-items: center;
 }
 
-.body__error .error .error__img .ovni {
+.body__error .error__img .ovni {
   position: relative;
   width: 300px;
   display: block;
   animation: animate 2s linear infinite alternate;
 }
 
-.body__error .error .error__img .mueble {
+.body__error .error__img .mueble {
   position: absolute;
   width: 120px;
   bottom: 180px;
@@ -2143,6 +2297,16 @@ footer .copyright p {
   }
   100% {
     transform: rotate(-3deg);
+  }
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+  .error {
+    flex-direction: column-reverse;
+  }
+  .error .mueble {
+    top: 200px;
   }
 }
 
@@ -2203,6 +2367,14 @@ footer .copyright p {
   color: white;
   font-style: italic;
   padding: 1em;
+}
+
+.banner--transparent {
+  background: transparent;
+}
+
+banner--scroll {
+  top: -50px;
 }
 
 @media only screen and (max-width: 570px) {
@@ -2317,7 +2489,7 @@ footer .copyright p {
   margin: .8em auto;
 }
 
-.products__btn a, .products__btn header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .products__btn .compras {
+.products__btn a, .products__btn .register__container .registro ul li .compras, .register__container .registro ul li .products__btn .compras {
   text-decoration: none;
   border: 2px solid #94C75B;
   padding: 15px;
@@ -2328,13 +2500,13 @@ footer .copyright p {
   display: inline-block;
 }
 
-.products__btn a span, .products__btn header .menu--large .content__logo .registro ul li .compras span, header .menu--large .content__logo .registro ul li .products__btn .compras span {
+.products__btn a span, .products__btn .register__container .registro ul li .compras span, .register__container .registro ul li .products__btn .compras span {
   font-size: .9rem;
   position: relative;
   z-index: 3;
 }
 
-.products__btn a::before, .products__btn header .menu--large .content__logo .registro ul li .compras::before, header .menu--large .content__logo .registro ul li .products__btn .compras::before {
+.products__btn a::before, .products__btn .register__container .registro ul li .compras::before, .register__container .registro ul li .products__btn .compras::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -2346,7 +2518,7 @@ footer .copyright p {
   transform: scaleY(1);
 }
 
-.products__btn a::after, .products__btn header .menu--large .content__logo .registro ul li .compras::after, header .menu--large .content__logo .registro ul li .products__btn .compras::after {
+.products__btn a::after, .products__btn .register__container .registro ul li .compras::after, .register__container .registro ul li .products__btn .compras::after {
   content: "";
   position: absolute;
   left: 5px;
@@ -2358,11 +2530,11 @@ footer .copyright p {
   transform: scaleX(1);
 }
 
-.products__btn a:hover::after, .products__btn header .menu--large .content__logo .registro ul li .compras:hover::after, header .menu--large .content__logo .registro ul li .products__btn .compras:hover::after {
+.products__btn a:hover::after, .products__btn .register__container .registro ul li .compras:hover::after, .register__container .registro ul li .products__btn .compras:hover::after {
   transform: scaleX(0);
 }
 
-.products__btn a:hover::before, .products__btn header .menu--large .content__logo .registro ul li .compras:hover::before, header .menu--large .content__logo .registro ul li .products__btn .compras:hover::before {
+.products__btn a:hover::before, .products__btn .register__container .registro ul li .compras:hover::before, .register__container .registro ul li .products__btn .compras:hover::before {
   transform: scaleY(0);
 }
 
@@ -2385,6 +2557,32 @@ footer .copyright p {
   background: white;
   color: #B28604;
   border: 1px solid #B28604;
+}
+
+/* SLIDER */
+.slider__btn {
+  display: inline-block;
+  width: 9em;
+  height: 3.5em;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: .3em;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: 1em;
+  margin-bottom: 2em;
+  transition: ease-in-out 0.3s;
+}
+
+.slider__btn:hover {
+  color: #B2AA0D;
+  border-color: #B2AA0D;
 }
 
 /* CARRITO DE COMPRAS */
@@ -2583,6 +2781,8 @@ footer .copyright p {
   height: auto;
   background: white;
   padding: 1.5em;
+  border-radius: .4em;
+  box-shadow: 0 0px 20px .1px black;
 }
 
 .modal__container .container {
@@ -2629,6 +2829,7 @@ footer .copyright p {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  width: auto;
   /* REDES */
 }
 
@@ -2648,10 +2849,11 @@ footer .copyright p {
 }
 
 .modal .modal__container .container p {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
   font-weight: 500;
   color: white;
+  line-height: 1.5em;
 }
 
 .modal .modal__container .countdown div {
@@ -2708,6 +2910,11 @@ footer .copyright p {
 .modal .modal__container .modal__subscribe .modal__form--container .form__btn {
   border-bottom-right-radius: .5em;
   height: 3em;
+  line-height: 3em;
+}
+
+.modal .modal__container .modal__subscribe .modal__form--container .form__btn:hover {
+  color: black;
 }
 
 .modal .modal__container .modal__links {
@@ -2716,7 +2923,7 @@ footer .copyright p {
   gap: 1em;
 }
 
-.modal .modal__container .modal__links a, .modal .modal__container .modal__links header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li .modal .modal__container .modal__links .compras {
+.modal .modal__container .modal__links a, .modal .modal__container .modal__links .register__container .registro ul li .compras, .register__container .registro ul li .modal .modal__container .modal__links .compras {
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
@@ -2729,21 +2936,21 @@ footer .copyright p {
   transition: ease-in-out 0.4s;
 }
 
-.modal .modal__container .modal__links a .redes__icon--fb, .modal .modal__container .modal__links header .menu--large .content__logo .registro ul li .compras .redes__icon--fb, header .menu--large .content__logo .registro ul li .modal .modal__container .modal__links .compras .redes__icon--fb {
+.modal .modal__container .modal__links a .redes__icon--fb, .modal .modal__container .modal__links .register__container .registro ul li .compras .redes__icon--fb, .register__container .registro ul li .modal .modal__container .modal__links .compras .redes__icon--fb {
   font-size: 1.1em;
   border-radius: .4em;
   overflow: hidden;
 }
 
-.modal .modal__container .modal__links a .redes__icon--ig, .modal .modal__container .modal__links header .menu--large .content__logo .registro ul li .compras .redes__icon--ig, header .menu--large .content__logo .registro ul li .modal .modal__container .modal__links .compras .redes__icon--ig {
+.modal .modal__container .modal__links a .redes__icon--ig, .modal .modal__container .modal__links .register__container .registro ul li .compras .redes__icon--ig, .register__container .registro ul li .modal .modal__container .modal__links .compras .redes__icon--ig {
   width: 1.27em;
 }
 
-.modal .modal__container .modal__links a .redes__icon--pn, .modal .modal__container .modal__links header .menu--large .content__logo .registro ul li .compras .redes__icon--pn, header .menu--large .content__logo .registro ul li .modal .modal__container .modal__links .compras .redes__icon--pn {
+.modal .modal__container .modal__links a .redes__icon--pn, .modal .modal__container .modal__links .register__container .registro ul li .compras .redes__icon--pn, .register__container .registro ul li .modal .modal__container .modal__links .compras .redes__icon--pn {
   border-radius: .2em;
 }
 
-.modal .modal__container .modal__links a:hover, .modal .modal__container .modal__links header .menu--large .content__logo .registro ul li .compras:hover, header .menu--large .content__logo .registro ul li .modal .modal__container .modal__links .compras:hover {
+.modal .modal__container .modal__links a:hover, .modal .modal__container .modal__links .register__container .registro ul li .compras:hover, .register__container .registro ul li .modal .modal__container .modal__links .compras:hover {
   background-color: #DCC133;
 }
 
@@ -2763,7 +2970,7 @@ footer .copyright p {
   font-family: "Lato", sans-serif;
 }
 
-* a, * header .menu--large .content__logo .registro ul li .compras, header .menu--large .content__logo .registro ul li * .compras {
+* a, * .register__container .registro ul li .compras, .register__container .registro ul li * .compras {
   text-decoration: none;
 }
 
@@ -2945,6 +3152,10 @@ footer .copyright p {
   .menu--large {
     display: none;
   }
+  /* MENU SMALL */
+  .register__container {
+    display: none;
+  }
   header {
     border-bottom: 1px solid #D8BCA8;
     opacity: 0.9;
@@ -2952,7 +3163,6 @@ footer .copyright p {
   header .menu--small {
     display: flex;
   }
-  /* MENU SMALL */
   .hero--sm {
     display: block;
   }
@@ -2962,6 +3172,10 @@ footer .copyright p {
   }
   .hero--sm {
     display: flex;
+  }
+  /* CAROUSEL ESTILOS */
+  .estilos {
+    display: none;
   }
   /* ARMA TU DISENO - HOME SECTION */
   .diseno__content {
