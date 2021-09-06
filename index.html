@@ -113,7 +113,7 @@
     </header>  
     
     <!-- HERO SECTION -->
-    <div id="carouselExampleDark" class="hero--lg carousel carousel-dark slide" data-bs-ride="carousel">
+    <!-- <div id="carouselExampleDark" class="hero--lg carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -121,7 +121,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/cliente-diseno2.jpg" class="d-block hero__img1 img-fluid" alt="carrusel-lampara">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=567&q=80" class="d-block hero__img1 img-fluid" alt="carrusel-lampara">
                 <div class="carousel-caption d-none d-md-block">
                 <h1>OLIMPA DESIGN
                 <span>Los mejores productos para tu hogar.</span></h1>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/clientediseno4.jpg" class="d-block hero__img2 img-fluid" alt="carrusel-nuestrodiseno">
+                <img src="images/Carousel2.svg" class="d-block hero__img2 img-fluid" alt="carrusel-nuestrodiseno">
                 <div class="carousel-caption d-none d-md-block" id="cr2">
                 <h5>Armamos tu diseño</h5>
                 <p>Nos encargamos de armar diseños personalizados a medida para vos.</p>
@@ -153,13 +153,75 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
+
+
+    <!-- CAROUSEL -->
+<div id="slider">
+    <figure>
+        <img src="images/Carousel/Carousel1.jpg" alt="carousel imagen 1">
+        <img src="images/Carousel/Carousel2.jpg" alt="carousel imagen 2">
+        <img src="images/Carousel/Carousel3.jpg" alt="carousel imagen 3">
+    </figure>
+</div>
 
     <div class="hero--sm">
         <p>Diseñamos</p>
         <h1>Tus muebles a medida</h1>
         <a href="productos.html" class="vermas__btn">Ver más</a>
     </div>
+
+<!-- MODAL -->
+<input type="checkbox" id="close">
+<label for="close" id="btn__close"></label>
+<div class="modal">
+    <div class="modal__container">
+        <div class="container d-flex flex-column align-items-center">
+            <input type="checkbox" id="close">
+            <label for="close" id="btn__close">X</label>
+            <h1>¡Ya llega!</h1>
+            <p>Descuentos exclusivos en toda nuestra página desde 30% off</p>
+            <div class="countdown d-flex justify-content-center" data-count="2021/9/13">
+                <div>
+                    <h3>%d</h3>
+                    <p>Días</p>
+                </div>
+                <div>
+                    <h3>%h</h3>
+                    <p>Horas</p>
+                </div>
+                <div>
+                    <h3>%m</h3>
+                    <p>Minutos</p>
+                </div>
+                <div>
+                    <h3>%s</h3>
+                    <p>Segundos</p>
+                </div>
+            </div>
+
+            <div class="modal__subscribe">
+                <p>Suscribite ahora y enterate de todos nuestros descuentos</p>
+                <form action="#" method="post" role="form" class="modal__form">
+                    <div class="modal__form--container">
+                        <input type="email" name="email" placeholder="usuario@ejemplo.com" class="input__form"><input type="submit" class="form__btn" value="Suscribirme">
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal__links text-center">
+                <a href="https://www.facebook.com/Olimpiadesign/">
+                    <span class="iconify redes__icon redes__icon--fb" data-icon="entypo-social:facebook" data-inline="false"></span>
+                </a>
+                <a href="https://www.instagram.com/olimpa.design/">
+                    <span class="iconify redes__icon redes__icon--ig" data-icon="ant-design:instagram-filled" data-inline="false"></span>
+                </a>
+
+                <a href="https://ar.pinterest.com/olimpadesign"><span class="iconify redes__icon redes__icon--pn" data-icon="fa:pinterest-square" data-inline="false"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <main>
     <!-- WHATSAPP ICON -->
@@ -238,14 +300,14 @@
             <div class="gallery__prod">
                 <div class="card__img" class="img-fluid" id="prod1">
                     <div class="social">
-                        <a href="#"><span class="iconify" data-icon="cil:cart"></span></a>
-                        <a href="#"><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                     </div>
                 </div>
                 <div class="card__text">
                     <h3>Mesa de Luz Nikita</h3>
                     <span>$8.000</span>
-                    <a href="#" class="vermas__btn">Ver más</a>
+                    <a href="productos.html" class="vermas__btn">Ver más</a>
                 </div>
                 <div class="badge--new">New in</div>
             </div>
@@ -253,14 +315,14 @@
             <div class="gallery__prod">
                 <div class="card__img" id="prod2">
                     <div class="social">
-                        <a href=""><span class="iconify" data-icon="cil:cart"></span></a>
-                        <a href=""><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                     </div>
                 </div>
                 <div class="card__text">
                     <h3>Mesa de Luz Kuzco</h3>
                     <span>$12.000</span>
-                    <a href="#" class="vermas__btn">Ver más</a>
+                    <a href="productos.html" class="vermas__btn">Ver más</a>
                 </div>
                 <div class="badge--new">New in</div>
             </div>
@@ -268,14 +330,14 @@
             <div class="gallery__prod">
                 <div class="card__img"  class="img-fluid" id="prod3">
                     <div class="social">
-                        <a href=""><span class="iconify" data-icon="cil:cart"></span></a>
-                        <a href=""><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                     </div>
                 </div>
                 <div class="card__text">
                     <h3>Cómoda Nala</h3>
                     <span>$16.500</span>
-                    <a href="#" class="vermas__btn">Ver más</a>
+                    <a href="productos.html" class="vermas__btn">Ver más</a>
                 </div>
                 <div class="badge--new">New in</div>
             </div>
@@ -283,14 +345,14 @@
             <div class="gallery__prod">
                 <div class="card__img" id="prod4">
                     <div class="social">
-                        <a href=""><span class="iconify" data-icon="cil:cart"></span></a>
-                        <a href=""><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                        <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                     </div>
                 </div>
                 <div class="card__text">
                     <h3>Kit Office</h3>
                     <span>$1.500</span>
-                    <a href="#" class="vermas__btn">Ver más</a>
+                    <a href="productos.html" class="vermas__btn">Ver más</a>
                 </div>
                 <div class="badge--new">New in</div>
             </div>
@@ -316,7 +378,7 @@
     <!-- CATEGORIAS -->
     <div class="categories">
         <div class="card__category item" id="card__category1">
-            <a href="#" class="category__container">
+            <a href="productos.html" class="category__container">
                 <div class="category__text">
                 <h3>Dormitorio</h3>
                 <p>Diseños exclusivos pensados para armonizar un dormitorio</p>
@@ -326,7 +388,7 @@
         </div>
 
         <div class="card__category item" id="card__category2">
-            <a href="#" class="category__container">
+            <a href="productos.html" class="category__container">
                 <div class="category__text">
                 <h3>Living</h3>
                 <p>Decoración y muebles que aportan calidez a tu sala de estar</p>
@@ -336,7 +398,7 @@
         </div>
 
         <div class="card__category item" id="card__category3">
-            <a href="#" class="category__container">
+            <a href="productos.html" class="category__container">
                 <div class="category__text">
                 <h3>Baño</h3>
                 <p>Transformá tu baño aportando la calidez de la madera natural</p>
@@ -346,7 +408,7 @@
         </div>
 
         <div class="card__category item" id="card__category4">
-            <a href="#" class="category__container">
+            <a href="productos.html" class="category__container">
                 <div class="category__text">
                 <h3>Organizadores</h3>
                 <p>Potenciá tus espacios con nuestros muebles y organizadores de calidad</p>
@@ -397,14 +459,14 @@
                 <div class="gallery__prod">
                     <div class="card__img" id="prodprom1">
                         <div class="social">
-                            <a href="#"><span class="iconify" data-icon="cil:cart"></span></a>
-                            <a href="#"><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                         </div>
                     </div>
                     <div class="card__text">
                         <h3>Escritorio Athos</h3>
                         <span>$8.200</span>
-                        <a href="#" class="vermas__btn">Ver más</a>
+                        <a href="productos.html" class="vermas__btn">Ver más</a>
                     </div>
                     <div class="badge--destacado">Más Vendidos</div>
                 </div>
@@ -412,14 +474,14 @@
                 <div class="gallery__prod">
                     <div class="card__img" id="prodprom2">
                         <div class="social">
-                            <a href="#"><span class="iconify" data-icon="cil:cart"></span></a>
-                            <a href="#"><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                         </div>
                     </div>
                     <div class="card__text">
                         <h3>Cómoda Cleopatra</h3>
                         <span>$14.800</span>
-                        <a href="#" class="vermas__btn">Ver más</a>
+                        <a href="productos.html" class="vermas__btn">Ver más</a>
                     </div>
                     <div class="badge--destacado">Más Vendidos</div>
                 </div>
@@ -427,14 +489,14 @@
                 <div class="gallery__prod">
                     <div class="card__img" id="prodprom3">
                         <div class="social">
-                            <a href="#"><span class="iconify" data-icon="cil:cart"></span></a>
-                            <a href="#"><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                         </div>
                     </div>
                     <div class="card__text">
                         <h3>Organizador de Baño Noe</h3>
                         <span>$20.000</span>
-                        <a href="#" class="vermas__btn">Ver más</a>
+                        <a href="productos.html" class="vermas__btn">Ver más</a>
                     </div>
                     <div class="badge--destacado">Más Vendidos</div>
                 </div>
@@ -442,14 +504,14 @@
                 <div class="gallery__prod">
                     <div class="card__img" id="prodprom4">
                         <div class="social">
-                            <a href="#"><span class="iconify" data-icon="cil:cart"></span></a>
-                            <a href="#"><span class="iconify" data-icon="bi:suit-heart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="cil:cart"></span></a>
+                            <a href="productos.html"><span class="iconify" data-icon="bi:suit-heart"></span></a>
                         </div>
                     </div>
                     <div class="card__text">
                         <h3>Macetero Colgante Minimal</h3>
                         <span>$1.200</span>
-                        <a href="#" class="vermas__btn">Ver más</a>
+                        <a href="productos.html" class="vermas__btn">Ver más</a>
                     </div>
                     <div class="badge--destacado">Más Vendidos</div>
                 </div>
@@ -481,7 +543,7 @@
                 <button type="input" class="form__btn">Suscribirme</button>
             </div>
             <div class="arrepentimiento">
-                <li><a href="#">Botón de arrepentimiento</a></li>
+                <li><a href="404.html">Botón de arrepentimiento</a></li>
             </div>
         </div>
         
@@ -524,7 +586,7 @@
                     <span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="contacto.html">Contacto</a>
                 </li>
                 <li>
-                    <span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="#">Ayuda</a>
+                    <span class="iconify chevron--right" data-icon="fa-solid:chevron-right"></span><a href="404.html">Ayuda</a>
                 </li>
             </ul>
         </div>
@@ -547,5 +609,6 @@
 <script>
     AOS.init();
 </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
