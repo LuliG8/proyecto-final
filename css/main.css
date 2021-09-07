@@ -187,7 +187,7 @@
 .hero--sm {
   position: relative;
   height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../images/cliente-diseno4.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/cliente-diseno4.jpg") no-repeat center/cover;
   display: none;
 }
 
@@ -844,7 +844,7 @@
 .hero__products {
   position: relative;
   height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../images/cliente-diseno4.jpg") no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../images/clientediseno4.jpg") no-repeat center/cover;
 }
 
 .products__header {
@@ -1240,11 +1240,11 @@ span {
 
 /* IMAGES */
 #aboutus__img1 {
-  background: url("../../images/us-couple.jpg") no-repeat 50% 100%/cover;
+  background: url("../images/us-couple.jpg") no-repeat 50% 100%/cover;
 }
 
 #aboutus__img2 {
-  background: url("../../images/oli.png") no-repeat center/cover;
+  background: url("../images/oli.png") no-repeat center/cover;
 }
 
 /* FOTOS GALLERY */
@@ -1367,7 +1367,7 @@ span {
 .contact {
   display: flex;
   flex-flow: column;
-  background: url("../../images/cliente-diseno6.jpg");
+  background: url("../images/cliente-diseno6.jpg");
   background-size: cover;
   width: 100%;
   filter: grayscale(60%);
@@ -1580,12 +1580,12 @@ span {
 }
 
 .container #coldiseno1 {
-  background: url("../../images/gallery/disenogallery1.jpg") no-repeat center/cover;
+  background: url("../images/gallery/disenogallery1.jpg") no-repeat center/cover;
   height: 100%;
 }
 
 .container #coldiseno2 {
-  background: url("../../images/gallery/disenogallery2.jpg") no-repeat center/cover;
+  background: url("../images/gallery/disenogallery2.jpg") no-repeat center/cover;
   height: 100%;
 }
 
@@ -1595,7 +1595,7 @@ span {
 }
 
 .container #coldiseno4 {
-  background: url("../../images/gallery/disenogallery4.jpg") no-repeat center/cover;
+  background: url("../images/gallery/disenogallery4.jpg") no-repeat center/cover;
   height: 100%;
 }
 
@@ -1610,17 +1610,17 @@ span {
 }
 
 .container #coldiseno7 {
-  background: url("../../images/gallery/disenogallery7.jpg") no-repeat center/cover;
+  background: url("../images/gallery/disenogallery7.jpg") no-repeat center/cover;
   height: 100%;
 }
 
 .container #coldiseno8 {
-  background: url("../../images/gallery/disenogallery8.jpg") no-repeat center/cover;
+  background: url("../images/gallery/disenogallery8.jpg") no-repeat center/cover;
   height: 100%;
 }
 
 .container #coldiseno9 {
-  background: url("../../images/gallery/disenogallery9.jpg") no-repeat center/cover;
+  background: url("../images/gallery/disenogallery9.jpg") no-repeat center/cover;
   height: 100%;
 }
 
