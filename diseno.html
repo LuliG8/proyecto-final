@@ -163,6 +163,62 @@
         </div>
         </div>
         
+                <!-- FORM -->
+        <section class="diseno__section">
+            <article class="diseno__article container-sm">
+                <p>¿Sabías que ahora podes pasarnos un diseño que quieras crear y nosotros lo armamos por vos? ¡Sí! Sólo tenes que enviarnos qué queres diseñar, contarnos los detalles que te gustaría agregar y nosotros te enviamos junto con el presupuesto, un render del resultado final y recomendaciones de diseño. ¿Lo mejor? Todo a un click de distancia.</p>
+    
+                <p>Y te contamos más: si todavía tenés dudas, te mandamos un muestrario de todos nuestro materiales para que elijas el que mejor se adapte a vos.</p>
+    
+                <form class="diseno__form row g-3">
+                    <div class="diseno__container col-md-4">
+                        <label for="nombre" class="diseno__label form-label">Nombre</label>
+                        <input type="text" class="diseno__input form-control" id="nombre" placeholder="Pepe"> 
+                    </div>
+                    <div class="diseno__container col-md-4">
+
+                    </div> 
+                    <div class="diseno__container col-8">
+                        ¿Qué diseño estás buscando?<br>
+                        <!-- DESPLEGABLE -->
+                        <label for="diseno" class="diseno__label form-label"></label>
+                        <select name="diseno" class="form-select" id="select" > 
+                            <option value="No" disabled selected>Selecciona una opción</option>
+                            <option value="Mesa">Mesa</option>
+                            <option value="Biblioteca">Biblioteca</option>
+                            <option value="Respaldo">Respaldo de cama</option>
+                            <option value="Cama">Base de cama</option>
+                            <option value="Barra">Barra</option>
+                            <option value="Escritorio">Escritorio</option>
+                            <option value="Zapatero">Zapatero</option>
+                            <option value="Decoracion">Decoración</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="diseno__container col-md-6">
+                        <label for="inputCity" class="diseno__label form-label">Ciudad</label>
+                        <input type="text" class="diseno__input form-control" id="inputCity" placeholder="Localidad - Barrio">
+                    </div>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Contanos acerca de tu idea"></textarea>
+                    <div class="container__check col-12">
+                        <div class="container__check">
+                        <input class="diseno__input form-check-input" type="checkbox" id="gridCheck">
+                        <label class="diseno__label form-check-label" for="gridCheck">
+                            ¿Querés nuestro asesoramiento? Primera consulta gratis
+                        </label> <br>
+                        <label for="file" class="file">¿Tenés un ejemplo? ¡Adjuntalo!</label>
+                        <input type="file" name="file" id="file" />
+                        </label>
+                        </div>
+                    </div>
+                    <div class="diseno__container col-12">
+                        <button type="submit" class="diseno__btn btn btn-primary btnCarousel">Envíar</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+        
     <!-- GALERIA DE DISEÑOS -->
     <div class="container">
         <div class="row">
@@ -217,51 +273,6 @@
             </div>
         </div>
     </div>
-
-        <!-- FORM -->
-        <section class="diseno__section">
-            <article class="diseno__article container-sm">
-                <h5>Armamos tu diseño</h5>
-                <p>¿Sabías que ahora podes pasarnos un diseño que quieras crear y nosotros lo armamos por vos? ¡Sí! Sólo tenes que enviarnos qué queres diseñar, contarnos los detalles que te gustaría agregar y nosotros te vamos a enviar un archivo para que veas como quedaría el resultado final junto con el presupuesto. ¿Lo mejor? Todo a un click de distancia.</p>
-
-                <p>Y te contamos más: si todavía tenés dudas, podes dejarnos tus datos en el formulario a continuación y dentro de las 24 hs. te vamos a estar mandando un muestrario de todos nuestro materiales para que elijas el que mejor se adapte a vos.</p>
-
-                <form class="diseno__form row g-3">
-                    <div class="diseno__container col-md-4">
-                        <label for="nombre" class="diseno__label form-label">Nombre</label>
-                        <input type="text" class="diseno__input form-control" id="nombre">
-                    </div>
-                    <div class="diseno__container col-md-4">
-                        <label for="inputPassword4" class="diseno__label form-label">Apellido</label>
-                        <input type="password" class="diseno__input form-control" id="inputPassword4">
-                    </div>
-                    <div class="diseno__container col-8">
-                        <label for="inputAddress" class="diseno__label form-label">Dirección</label>
-                        <input type="text" class="diseno__input form-control" id="inputAddress" placeholder="Calle 123">
-                    </div>
-                    <div class="diseno__container col-md-6">
-                        <label for="inputCity" class="diseno__label form-label">Ciudad</label>
-                        <input type="text" class="diseno__input form-control" id="inputCity">
-                    </div>
-                    <div class="diseno__container col-md-2">
-                        <label for="inputZip" class="diseno__label form-label">Cod. Postal</label>
-                        <input type="text" class="diseno__input form-control" id="inputZip">
-                    </div>
-                    <div class="container__check col-12">
-                        <div class="container__check">
-                        <input class="diseno__input form-check-input" type="checkbox" id="gridCheck">
-                        <label class="diseno__label form-check-label" for="gridCheck">
-                            Suscribirme al newsletter para enterarme de todas las promos y descuentos
-                        </label>
-                        </div>
-                    </div>
-                    <div class="diseno__container col-12">
-                        <button type="submit" class="diseno__btn btn btn-primary btnCarousel">Envíar</button>
-                    </div>
-                </form>
-            </article>
-        </section>
-     </section>
 </section>
 </main>
 
