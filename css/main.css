@@ -1538,10 +1538,32 @@ span {
   display: flex;
   flex-flow: column;
   align-items: center;
+  display: flex;
+  flex-flow: column;
+  gap: .7em;
+  align-items: center;
 }
 
 .list .list__card .list__number {
   font-family: "Raleway", sans-serif;
+  background: #FFCB00;
+  padding: 1em 1.5em;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.list .list__card span {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.list .list__card p {
+  font-family: "Raleway", sans-serif;
+  font-size: .8rem;
+  max-width: 80%;
 }
 
 /* FORM */
@@ -1558,6 +1580,10 @@ span {
 
 .diseno__section p {
   margin-bottom: .8em;
+}
+
+.diseno__section .file {
+  margin: 1em;
 }
 
 .diseno__article {
@@ -1635,8 +1661,8 @@ span {
   margin: 0 1.2em 3em;
   position: relative;
   gap: 4em;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .testimonials .testimonials__container {
