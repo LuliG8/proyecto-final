@@ -662,6 +662,8 @@
   top: 40px;
   width: 100%;
   transform: translateY(-50%);
+  line-height: 1.4rem;
+  margin: 1em auto;
 }
 
 .categories .card__category img {
@@ -681,8 +683,6 @@
   opacity: 0;
   visibility: hidden;
   margin-top: 20px;
-  line-height: 1.5rem;
-  padding: 1.6em;
   transition: .3s all ease;
 }
 
