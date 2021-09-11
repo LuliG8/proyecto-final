@@ -2741,8 +2741,8 @@ footer .copyright p {
   width: 9em;
   height: 3.5em;
   background-color: transparent;
-  color: white;
-  border: 2px solid white;
+  color: #B2AA0D;
+  border: 2px solid #B2AA0D;
   border-radius: .3em;
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -2758,8 +2758,8 @@ footer .copyright p {
 }
 
 .slider__btn:hover {
-  color: #B2AA0D;
-  border-color: #B2AA0D;
+  color: white;
+  border-color: white;
 }
 
 /* GENERAL STYLES */
