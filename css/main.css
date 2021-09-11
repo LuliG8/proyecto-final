@@ -25,7 +25,11 @@
   width: 20%;
   float: left;
   height: 80vh;
+<<<<<<< HEAD
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../images/carousel/carousel1.jpg") no-repeat center/cover;
+=======
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../../images/carousel/carousel1.jpg) no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 #slider .figure #carousel1 h1 {
@@ -72,7 +76,11 @@
   width: 20%;
   float: left;
   height: 80vh;
+<<<<<<< HEAD
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../images/carousel/carousel2.jpg") no-repeat center/cover;
+=======
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../images/carousel/carousel2.jpg) no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 #slider .figure #carousel2 h1 {
@@ -119,7 +127,11 @@
   width: 20%;
   float: left;
   height: 80vh;
+<<<<<<< HEAD
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../images/carousel/carousel3.jpg") no-repeat center/cover;
+=======
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../images/carousel/carousel3.jpg) no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 #slider .figure #carousel3 h1 {
@@ -187,7 +199,11 @@
 .hero--sm {
   position: relative;
   height: 60vh;
+<<<<<<< HEAD
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/cliente-diseno4.jpg") no-repeat center/cover;
+=======
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../../images/cliente-diseno4.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
   display: none;
 }
 
@@ -662,8 +678,11 @@
   top: 40px;
   width: 100%;
   transform: translateY(-50%);
+<<<<<<< HEAD
   line-height: 1.4rem;
   margin: 1em auto;
+=======
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 .categories .card__category img {
@@ -846,7 +865,11 @@
 .hero__products {
   position: relative;
   height: 50vh;
+<<<<<<< HEAD
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../images/clientediseno4.jpg") no-repeat center/cover;
+=======
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../../images/cliente-diseno4.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 .products__header {
@@ -1084,6 +1107,7 @@
 }
 
 /* HERO */
+<<<<<<< HEAD
 .hero__img {
     background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.40)),url("../images/herous.jpg") no-repeat center/cover;
     height: 50vh;
@@ -1092,6 +1116,11 @@
 .hero__img .header__emojis {
   position: absolute;
   top: 45%;
+=======
+.hero__img .header__emojis {
+  position: absolute;
+  top: 40%;
+>>>>>>> 421912d (creacion de repositorio)
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1247,11 +1276,19 @@ span {
 
 /* IMAGES */
 #aboutus__img1 {
+<<<<<<< HEAD
   background: url("../images/us-couple.jpg") no-repeat 50% 100%/cover;
 }
 
 #aboutus__img2 {
   background: url("../images/oli.png") no-repeat center/cover;
+=======
+  background: url("../../images/us-couple.jpg") no-repeat 50% 100%/cover;
+}
+
+#aboutus__img2 {
+  background: url("../../images/oli.png") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 /* FOTOS GALLERY */
@@ -1540,14 +1577,18 @@ span {
   display: flex;
   flex-flow: column;
   align-items: center;
+<<<<<<< HEAD
   display: flex;
   flex-flow: column;
   gap: .7em;
   align-items: center;
+=======
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 .list .list__card .list__number {
   font-family: "Raleway", sans-serif;
+<<<<<<< HEAD
   background: #FFCB00;
   padding: 1em 1.5em;
   border-radius: 50%;
@@ -1566,6 +1607,8 @@ span {
   font-family: "Raleway", sans-serif;
   font-size: .8rem;
   max-width: 80%;
+=======
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 /* FORM */
@@ -1584,10 +1627,13 @@ span {
   margin-bottom: .8em;
 }
 
+<<<<<<< HEAD
 .diseno__section .file {
   margin: 1em;
 }
 
+=======
+>>>>>>> 421912d (creacion de repositorio)
 .diseno__article {
   display: flex;
   flex-flow: column;
@@ -1613,12 +1659,20 @@ span {
 }
 
 .container #coldiseno1 {
+<<<<<<< HEAD
   background: url("../images/gallery/disenogallery1.jpg") no-repeat center/cover;
+=======
+  background: url("../../images/gallery/disenogallery1.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
   height: 100%;
 }
 
 .container #coldiseno2 {
+<<<<<<< HEAD
   background: url("../images/gallery/disenogallery2.jpg") no-repeat center/cover;
+=======
+  background: url("../../images/gallery/disenogallery2.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
   height: 100%;
 }
 
@@ -1628,7 +1682,11 @@ span {
 }
 
 .container #coldiseno4 {
+<<<<<<< HEAD
   background: url("../images/gallery/disenogallery4.jpg") no-repeat center/cover;
+=======
+  background: url("../../images/gallery/disenogallery4.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
   height: 100%;
 }
 
@@ -1643,17 +1701,29 @@ span {
 }
 
 .container #coldiseno7 {
+<<<<<<< HEAD
   background: url("../images/gallery/disenogallery7.jpg") no-repeat center/cover;
+=======
+  background: url("../../images/gallery/disenogallery7.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
   height: 100%;
 }
 
 .container #coldiseno8 {
+<<<<<<< HEAD
   background: url("../images/gallery/disenogallery8.jpg") no-repeat center/cover;
+=======
+  background: url("../../images/gallery/disenogallery8.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
   height: 100%;
 }
 
 .container #coldiseno9 {
+<<<<<<< HEAD
   background: url("../images/gallery/disenogallery9.jpg") no-repeat center/cover;
+=======
+  background: url("../../images/gallery/disenogallery9.jpg") no-repeat center/cover;
+>>>>>>> 421912d (creacion de repositorio)
   height: 100%;
 }
 
@@ -1663,8 +1733,13 @@ span {
   margin: 0 1.2em 3em;
   position: relative;
   gap: 4em;
+<<<<<<< HEAD
   display: flex;
   flex-flow: row wrap;
+=======
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 .testimonials .testimonials__container {
@@ -2741,8 +2816,13 @@ footer .copyright p {
   width: 9em;
   height: 3.5em;
   background-color: transparent;
+<<<<<<< HEAD
   color: #B2AA0D;
   border: 2px solid #B2AA0D;
+=======
+  color: white;
+  border: 2px solid white;
+>>>>>>> 421912d (creacion de repositorio)
   border-radius: .3em;
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -2758,8 +2838,13 @@ footer .copyright p {
 }
 
 .slider__btn:hover {
+<<<<<<< HEAD
   color: white;
   border-color: white;
+=======
+  color: #B2AA0D;
+  border-color: #B2AA0D;
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 /* GENERAL STYLES */
@@ -3250,11 +3335,14 @@ footer .copyright p {
   .more {
     display: none;
   }
+<<<<<<< HEAD
   
   /* MODAL */
   #close + label {
     padding-right: 4em;
   }
+=======
+>>>>>>> 421912d (creacion de repositorio)
 }
 
 @media only screen and (max-width: 700px) {
