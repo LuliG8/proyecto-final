@@ -819,7 +819,7 @@
 .products__menu .products__menu--category .products__menu--item a, .products__menu .products__menu--category .products__menu--item .register__container .registro ul li .compras, .register__container .registro ul li .products__menu .products__menu--category .products__menu--item .compras {
   text-decoration: none;
   color: #FFCB00;
-  font-size: 1vw;
+  font-size: .8rem;
 }
 
 .products__menu .products__menu--category .products__menu--item .products__submenu {
@@ -853,7 +853,7 @@
 .hero__products {
   position: relative;
   height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../images/clien") no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("../images/clientediseno4.jpg") no-repeat center/cover;
 }
 
 .products__header {
@@ -1090,6 +1090,13 @@
   color: #94C75B;
 }
 
+/* RESPONSIVE */
+@media only screen and (max-width: 370px) {
+  .menu__list--sm li .menu__icons--end {
+    display: none;
+  }
+}
+
 /* HERO */
 .hero__img {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1557425529-b1ae9c141e7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") no-repeat center/cover;
@@ -1134,6 +1141,7 @@ span {
 .aboutus .aboutus__text {
   margin: 0;
   width: 40%;
+  min-width: 300px;
   line-height: 2em;
   font-family: "Raleway", sans-serif;
   font-size: .8rem;
@@ -1149,8 +1157,8 @@ span {
 }
 
 .aboutus .aboutus__img {
-  width: 100%;
-  max-width: 30vw;
+  width: 35vw;
+  min-width: 320px;
   height: 700px;
   max-height: 70vh;
   border-radius: 5%;
@@ -1182,7 +1190,6 @@ span {
 
 .aboutus .aboutus__article .aboutus__container {
   display: flex;
-  flex-flow: row;
   justify-content: space-around;
   align-items: center;
   margin-top: 2em;
@@ -1216,7 +1223,7 @@ span {
 
 .aboutus .aboutus__article2 .aboutus__container2 {
   display: flex;
-  flex-flow: row-reverse;
+  flex-flow: row-reverse wrap-reverse;
   justify-content: space-around;
   align-items: center;
   margin-top: 2em;
@@ -1373,9 +1380,16 @@ span {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .aboutus__container, .aboutus__container2 {
+@media only screen and (max-width: 990px) {
+  .aboutus__img {
+    margin: 1.5em;
+  }
+  .aboutus__container {
+    flex-flow: column;
     padding-top: 3em;
+  }
+  .aboutus__container2 .aboutus__text {
+    margin-top: 4em;
   }
 }
 
@@ -1465,6 +1479,7 @@ span {
   gap: 2em;
   background-color: black;
   opacity: 0.7;
+  min-width: 300px;
 }
 
 .contact .contact__container .contact__info .contact__box {
@@ -1527,7 +1542,10 @@ span {
     width: 60%;
   }
   .contact__info {
-    width: 40%;
+    width: 100vw;
+  }
+  input[type=checkbox] {
+    margin: 1em 0;
   }
 }
 
@@ -1577,9 +1595,11 @@ span {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  gap: 4em;
+  background: rgba(255, 255, 255, 0.774);
+  border-radius: .4em;
+  box-shadow: 0 5px 15px -5px black;
   margin: 1.5rem 0;
-  width: 100%;
+  height: 300px;
 }
 
 .list__container .list .list__card {
@@ -1588,11 +1608,6 @@ span {
   align-items: center;
   justify-content: center;
   gap: .7em;
-  width: 300px;
-  height: 300px;
-  background: rgba(255, 255, 255, 0.774);
-  border-radius: .3em;
-  transition: .3s ease;
 }
 
 .list__container .list .list__card .list__number {
@@ -1722,8 +1737,8 @@ span {
 }
 
 .diseno__materiales .maderas__container .maderas__features .madera {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
 }
 
@@ -1838,9 +1853,10 @@ span {
 .testimonials {
   text-align: center;
   margin: 5em 0 7em;
-  gap: 4em;
+  gap: 6em;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .testimonials .testimonials__container {
@@ -1935,6 +1951,9 @@ span {
   font-weight: 500;
   letter-spacing: 2px;
   color: black;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-width: 200px;
 }
 
 .body__error .error .text__error .error__btn {
@@ -1945,6 +1964,7 @@ span {
   text-transform: uppercase;
   letter-spacing: .1em;
   padding: .8em;
+  min-width: 200px;
   transition: 0.3s;
   outline: none;
 }
@@ -1994,12 +2014,9 @@ span {
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 1200px) {
-  .error {
-    flex-direction: column-reverse;
-  }
-  .error .mueble {
-    top: 200px;
+@media only screen and (max-width: 1100px) {
+  .error__img {
+    visibility: hidden;
   }
 }
 
@@ -2182,12 +2199,13 @@ header .menu__list--sm {
   gap: .8em;
   justify-content: space-between;
   align-items: baseline;
+  padding-left: 0;
   /* HAMBURGER MENU */
   /* MENU ICONS */
 }
 
 header .menu__list--sm .hamburger__menu {
-  z-index: 1;
+  z-index: 1100;
   /* HAMBURGER MENU ROTA A CRUZ */
   /* APARECE EL MENU */
 }
@@ -2254,7 +2272,7 @@ header .menu__list--sm .hamburger__menu .menu {
 header .menu__list--sm .hamburger__menu .menu div {
   background: black;
   width: 200vw;
-  height: 200vw;
+  height: 400vw;
   display: flex;
   flex: none;
   align-items: center;
@@ -3064,8 +3082,9 @@ footer .copyright p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 800px;
   text-align: center;
-  margin: 4em 10em;
+  margin: 4em auto;
   gap: 4em;
   padding: 1.5em 3em;
   /* FAQ BORDERS */
@@ -3147,12 +3166,12 @@ footer .copyright p {
 
 /* WHATSAPP ICON */
 #whatsapp {
-  width: 5%;
-  height: 7%;
   position: fixed;
-  bottom: 2%;
-  right: 0%;
-  z-index: 1;
+  width: 50px;
+  height: 55px;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2000;
 }
 
 /* HEADER WITH EMOJIS */
@@ -3196,6 +3215,7 @@ textarea {
   animation: modal 1s 1s forwards;
   visibility: hidden;
   opacity: 0;
+  z-index: 2050;
 }
 
 .modal__container {
@@ -3221,7 +3241,7 @@ textarea {
   right: 0;
   color: white;
   font-size: 1.7rem;
-  z-index: 50;
+  z-index: 2050;
   width: 40px;
   line-height: 40px;
   cursor: pointer;
@@ -3281,11 +3301,15 @@ textarea {
   line-height: 1.5em;
 }
 
+.modal .modal__container .countdown {
+  max-width: 90vw;
+}
+
 .modal .modal__container .countdown div {
   text-align: center;
-  margin: 10px;
-  width: 100px;
-  padding: 15px 0;
+  margin: 5px;
+  width: 90px;
+  padding: 10px 0;
   background: rgba(185, 178, 178, 0.288);
   border-top: 5px solid #94C75B;
 }
@@ -3464,8 +3488,17 @@ textarea {
   .modal__container {
     width: 65%;
   }
+  .modal__container .countdown p {
+    padding: 0 10px;
+  }
   .modal__container #close + label {
-    padding-right: 4em;
+    padding-right: 2em;
+  }
+  .products__menu {
+    display: none;
+  }
+  .design__gallery {
+    display: none;
   }
 }
 
@@ -3555,6 +3588,9 @@ textarea {
     display: none;
     background: white;
   }
+  .list {
+    width: 100vw;
+  }
 }
 
 @media only screen and (max-width: 880px) {
@@ -3628,5 +3664,11 @@ textarea {
   }
   .banner__instagram {
     height: 100px;
+  }
+  .hero__products {
+    height: 20vh;
+  }
+  .materiales__container {
+    display: none;
   }
 }
