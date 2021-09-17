@@ -1556,13 +1556,13 @@ span {
   align-items: center;
 }
 
-.diseno__section h2 {
+.diseno__section .list__container h2 {
   position: relative;
   color: whitesmoke;
   margin-bottom: 1em;
 }
 
-.diseno__section h2::after {
+.diseno__section .list__container h2::after {
   content: '';
   position: absolute;
   display: block;
@@ -1572,7 +1572,7 @@ span {
   left: 0;
 }
 
-.diseno__section p {
+.diseno__section .list__container p {
   margin-bottom: .8em;
 }
 
